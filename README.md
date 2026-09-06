@@ -1,6 +1,13 @@
-# GTD System - Getting Things Done with Claude Code
+# 7 Habits + GTD with Claude Code
 
-A comprehensive Getting Things Done (GTD) implementation with claude code powered task processing and daily planning features.
+A Getting Things Done (GTD) implementation with Claude Code powered task processing and daily
+planning, extended with Stephen Covey's 7 Habits (and the later 8th Habit) as the values
+foundation underneath it.
+
+**This is a fork of [adagradschool/cc-gtd](https://github.com/adagradschool/cc-gtd).** Full
+credit for the original GTD system design and implementation goes to that project and its
+author. This fork keeps that GTD engine intact and layers Covey's habits on top as the "why"
+behind the system, so the discipline has something to anchor to beyond the mechanics.
 
 **New here? Run `/onboard`.** It guides the first setup, brain dump, project map, daily
 plan, and next habits. [ONBOARDING.md](ONBOARDING.md) is the written reference.
@@ -33,11 +40,12 @@ This system implements David Allen's GTD methodology with modern AI enhancements
 
 ```
 gtd/
-├── inbox.md                    # Raw capture with timestamps
-├── projects.md                 # Project dashboard (read-only overview)
-├── waiting-for.md              # Delegated/expected items
-├── someday-maybe.md            # Future possibilities
-├── calendar.md                 # Time-specific items
+├── personal-untracked/         # User-specific files, ignored as one folder
+│   ├── inbox.md                # Raw capture with timestamps
+│   ├── projects.md             # Project dashboard (read-only overview)
+│   ├── waiting-for.md           # Delegated/expected items
+│   ├── someday-maybe.md         # Future possibilities
+│   └── calendar.md              # Time-specific items
 ├── projects/active/            # Active projects
 │   └── [project-name]/
 │       ├── info.md             # Project goals, outcomes, progress
@@ -133,8 +141,8 @@ The `justfile` includes helpful commands:
 ## Privacy
 
 The repo is designed to share commands, skills, and templates while keeping personal data
-local. The default `.gitignore` excludes daily logs, journals, active projects, identity,
-calendar mirror, inbox, waiting-for, someday/maybe, `todo.md`, and local MCP config.
+local. The default `.gitignore` excludes the `personal-untracked/` folder, private runtime
+folders, and local MCP config.
 
 ## Smart Processing Logic
 
@@ -176,4 +184,10 @@ This GTD system structure is open source and available for anyone to use and ada
 
 ## Credits
 
-Based on David Allen's Getting Things Done methodology with AI enhancements for modern workflows.
+- **GTD system design & implementation:** [adagradschool/cc-gtd](https://github.com/adagradschool/cc-gtd)
+  on GitHub — this fork's inbox/projects/contexts/reviews/daily-planning engine, commands, and
+  private/shareable file split are theirs. All credit for that work belongs to them.
+- **GTD methodology:** David Allen's *Getting Things Done*.
+- **Habits layer:** Stephen Covey's *The 7 Habits of Highly Effective People* (30th Anniversary
+  Edition) and *The 8th Habit*, adapted here as the identity/mission foundation underneath the
+  GTD loop above.

@@ -15,15 +15,15 @@ dump, first processed actions, and the first daily plan.
 This is not a normal todo list. It is a GTD operating loop:
 
 ```text
-/restart -> /capture -> /daily -> todo.md -> /shutdown -> /weekly
+/restart -> /capture -> /daily -> personal-untracked/todo.md -> /shutdown -> /weekly
 ```
 
 - `journal/` is raw thinking.
-- `inbox.md` is unprocessed capture.
+- `personal-untracked/inbox.md` is unprocessed capture.
 - `projects/active/*/info.md` holds outcomes and status.
 - `projects/active/*/tasks.md` holds next actions by context.
-- `calendar.md` mirrors fixed commitments and recurring blocks.
-- `todo.md` is only today's working list.
+- `personal-untracked/calendar.md` mirrors fixed commitments and recurring blocks.
+- `personal-untracked/todo.md` is only today's working list.
 - `daily/` records plan, work log, and reflection.
 - `weekly/` keeps the system honest.
 
@@ -45,5 +45,4 @@ Calendar, or Slack once the basic loop works.
 ## Privacy
 
 Personal files are intentionally ignored by git. After setup, `git status --ignored` should
-show files like `identity.md`, `calendar.md`, `projects/`, `daily/`, `journal/`, and
-`todo.md` as ignored.
+show the `personal-untracked/` folder, private runtime folders, and local MCP config as ignored.

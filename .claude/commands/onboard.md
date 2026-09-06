@@ -22,7 +22,7 @@ Get the user to a trustworthy first daily loop:
 5. Calendar skeleton exists.
 6. A raw brain dump is captured.
 7. Obvious actions are processed.
-8. Today's `todo.md` is created.
+8. Today's `personal-untracked/todo.md` is created.
 9. User knows the evening and weekly follow-up commands.
 
 ## Behavior
@@ -35,12 +35,12 @@ it for later refinement.
 
 First, check whether the private workspace files exist:
 
-- `identity.md`
-- `projects.md`
-- `calendar.md`
-- `inbox.md`
-- `waiting-for.md`
-- `someday-maybe.md`
+- `personal-untracked/identity.md`
+- `personal-untracked/projects.md`
+- `personal-untracked/calendar.md`
+- `personal-untracked/inbox.md`
+- `personal-untracked/waiting-for.md`
+- `personal-untracked/someday-maybe.md`
 - `daily/`
 - `journal/`
 - `projects/active/`
@@ -55,7 +55,7 @@ Do not overwrite existing private files.
 
 Then verify privacy:
 
-- Confirm `.gitignore` ignores the root private files and folders.
+- Confirm `.gitignore` ignores the `personal-untracked/` folder and private runtime folders.
 - If a private file is not ignored, warn the user and fix `.gitignore` before continuing.
 
 ### 2. Explain the System in One Minute
@@ -63,23 +63,23 @@ Then verify privacy:
 Give the user the mental model:
 
 - `journal/` is raw thinking.
-- `inbox.md` is unprocessed capture.
+- `personal-untracked/inbox.md` is unprocessed capture.
 - `projects/active/*/info.md` holds outcomes and status.
 - `projects/active/*/tasks.md` holds next actions by context.
-- `calendar.md` mirrors fixed commitments and recurring blocks.
-- `todo.md` is only today's working list.
+- `personal-untracked/calendar.md` mirrors fixed commitments and recurring blocks.
+- `personal-untracked/todo.md` is only today's working list.
 - `daily/` records the plan, work log, and reflection.
 - `weekly/` keeps the system honest.
 
 Then explain the operating loop:
 
 ```text
-/restart -> /capture -> /daily -> todo.md during the day -> /shutdown -> /weekly
+/restart -> /capture -> /daily -> personal-untracked/todo.md during the day -> /shutdown -> /weekly
 ```
 
 ### 3. Draft Identity Anchors
 
-Open `identity.md`. If it still looks like the template, ask the user for 5-8 identity
+Open `personal-untracked/identity.md`. If it still looks like the template, ask the user for 5-8 identity
 anchors. Keep prompts concrete:
 
 - Mornings / energy
@@ -102,7 +102,7 @@ If the user wants to skip this, keep the template and add a short TODO at the to
 
 ### 4. Build the First Project Map
 
-Open `projects.md`. If it still looks like the template, suggest this starter set:
+Open `personal-untracked/projects.md`. If it still looks like the template, suggest this starter set:
 
 - `work`
 - `health-and-foundation`
@@ -124,14 +124,14 @@ For each confirmed project:
    - constraints/deadlines, if known
 4. Leave `tasks.md` with context headings.
 
-Update `projects.md` Active Projects with the chosen names and one-line outcomes.
+Update `personal-untracked/projects.md` Active Projects with the chosen names and one-line outcomes.
 
 If Todoist is connected, add a minimal sync map only after local projects are clear. If it
 is not connected, leave Todoist IDs blank and note that `/todoist` can fill them later.
 
 ### 5. Create the Calendar Skeleton
 
-Open `calendar.md`. If it still looks like the template, guide the user to create a normal
+Open `personal-untracked/calendar.md`. If it still looks like the template, guide the user to create a normal
 weekday skeleton. Ask for rough blocks, not perfect scheduling:
 
 - wake / morning routine
@@ -174,10 +174,10 @@ Capture the user's words verbatim. Do not organize while dumping.
 After the dump, process only clear items:
 
 - clear next actions -> relevant `projects/active/<project>/tasks.md`
-- delegated items -> `waiting-for.md`
-- hard dates -> `calendar.md`
-- future/maybe ideas -> `someday-maybe.md`
-- unclear items -> `inbox.md`
+- delegated items -> `personal-untracked/waiting-for.md`
+- hard dates -> `personal-untracked/calendar.md`
+- future/maybe ideas -> `personal-untracked/someday-maybe.md`
+- unclear items -> `personal-untracked/inbox.md`
 
 Use GTD next-action language: verb first, concrete, small enough to do.
 
@@ -188,7 +188,7 @@ leave them local.
 
 ### 8. Make the First Daily Plan
 
-Create today's `daily/YYYY-MM-DD.md` and `todo.md`.
+Create today's `daily/YYYY-MM-DD.md` and `personal-untracked/todo.md`.
 
 Daily log structure:
 
@@ -218,7 +218,7 @@ Daily log structure:
 <!-- Fill in at /shutdown -->
 ```
 
-`todo.md` structure:
+`personal-untracked/todo.md` structure:
 
 ```markdown
 # Todo - YYYY-MM-DD
@@ -239,7 +239,7 @@ Pick a realistic Top 3. If the user has too many tasks, explicitly defer most of
 
 End by showing the user exactly what to do next:
 
-- During the day: work from `todo.md`; add new loops under `## Captured`.
+- During the day: work from `personal-untracked/todo.md`; add new loops under `## Captured`.
 - Tonight: run `/shutdown`.
 - Tomorrow morning: run `/daily`.
 - End of week: run `/weekly`.

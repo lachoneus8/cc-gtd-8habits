@@ -42,7 +42,7 @@ Suggested replies
 - Channel/person: concise reply text
 ```
 
-When applying changes to this repo, place durable reference notes in `reference/`, daily planning notes in `daily/YYYY-MM-DD.md`, delegated items in `waiting-for.md`, and project tasks in the relevant `projects/active/<project>/tasks.md` file.
+When applying changes to this repo, place durable reference notes in `reference/`, daily planning notes in `daily/YYYY-MM-DD.md`, delegated items in `personal-untracked/waiting-for.md`, and project tasks in the relevant `projects/active/<project>/tasks.md` file.
 
 ## Tooling
 

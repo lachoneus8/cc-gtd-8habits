@@ -14,9 +14,9 @@ DO NOT CREATE DUPLICATE PROJECTS/TASKS IN Todoist.
 DO NOT CLOSE ANY TASKS/PROJECTS automatically — I'll mark things as completed in Todoist and they should be reflected in the GTD system.
 
 ## Mapping
-**`projects.md` holds the authoritative GTD ↔ Todoist Sync Map** (folder ↔ project/section
+**`personal-untracked/projects.md` holds the authoritative GTD ↔ Todoist Sync Map** (folder ↔ project/section
 + IDs). Read it first and sync against those exact IDs. When a project/section is added,
-renamed, or removed on either side, update the Sync Map in `projects.md` in the same pass.
+renamed, or removed on either side, update the Sync Map in `personal-untracked/projects.md` in the same pass.
 
 - **GTD folder** → Todoist **project** (or a **section** within a shared project — e.g.
   `side-projects/` and `social/` map to sections, per the Sync Map)
@@ -59,7 +59,7 @@ For each active GTD project:
 - Move/create the corresponding task in the proper Todoist project with the context label
 
 ### 4. Someday/Maybe Sync
-- Read `someday-maybe.md`
+- Read `personal-untracked/someday-maybe.md`
 - Compare with the Todoist `Someday/Maybe` project
 - Sync bidirectionally following the same diff logic as active projects
 
