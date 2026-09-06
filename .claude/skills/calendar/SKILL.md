@@ -1,6 +1,6 @@
 ---
 name: calendar
-description: Pull Google Calendar context into the GTD system — read events, surface fixed commitments and open blocks, and (only when asked) create/move time-block events. Use when planning the day or week, checking the schedule, syncing calendar.md, or time-blocking a task. Invoked by /daily and /weekly.
+description: Pull Google Calendar context into the GTD system — read events, surface fixed commitments and open blocks, and (only when asked) create/move time-block events. Use when planning the day or week, checking the schedule, syncing personal-untracked/calendar.md, or time-blocking a task. Invoked by /daily and /weekly.
 allowed-tools: mcp__claude_ai_Google_Calendar__list_events, mcp__claude_ai_Google_Calendar__list_calendars, mcp__claude_ai_Google_Calendar__create_event, mcp__claude_ai_Google_Calendar__update_event, mcp__claude_ai_Google_Calendar__delete_event
 ---
 
@@ -28,10 +28,10 @@ Uses the connected Google Calendar MCP server (tools named `mcp__*_Google_Calend
 - Reschedule or adjust: `update_event`
 - Never create, move, or delete events automatically — only when I explicitly ask.
 
-### 4. Keep calendar.md in Sync
-- `calendar.md` mirrors the recurring daily skeleton and dated commitments for the GTD side.
+### 4. Keep personal-untracked/calendar.md in Sync
+- `personal-untracked/calendar.md` mirrors the recurring daily skeleton and dated commitments for the GTD side.
 - When the recurring blocks change in Google Calendar, re-sync the skeleton table in
-  `calendar.md` and update the "Last synced" date.
+  `personal-untracked/calendar.md` and update the "Last synced" date.
 
 ## Notes
 - Times are interpreted in my primary calendar's time zone unless I specify otherwise.

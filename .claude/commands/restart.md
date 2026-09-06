@@ -52,6 +52,6 @@ just get it all out.
    offer — but do not auto-run — the next steps:
    - `/capture` — pull concrete next actions out of the loops
    - `/daily` — plan the day around them
-   - `/weekly` — when it's review time, calibrate present self against `identity.md`
+   - `/weekly` — when it's review time, calibrate present self against `personal-untracked/identity.md`
 
    The dump itself stays raw. That's the point.

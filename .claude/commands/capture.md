@@ -34,13 +34,13 @@ Auto-processed items are simultaneously:
 **Sent to inbox (needs clarification):**
 ```
 /capture "Research new project management tools"
-→ inbox.md (unclear scope, needs processing)
+→ personal-untracked/inbox.md (unclear scope, needs processing)
 
 /capture "Team meeting went badly"
-→ inbox.md (unclear what action to take)
+→ personal-untracked/inbox.md (unclear what action to take)
 
 /capture "Fix the website issue"
-→ inbox.md (vague, needs more specifics)
+→ personal-untracked/inbox.md (vague, needs more specifics)
 ```
 
 ## AI Analysis
@@ -60,11 +60,11 @@ When auto-processing tasks, the system:
 3. **Creates the task** in the matching Todoist project with content `[Task]`, label `@context` (plus priority/due date if known)
 4. **Handles inbox items** by creating them in the Todoist `Inbox` project for later processing
 
-If no clear project exists, items go to both GTD inbox.md and the Todoist `Inbox` project for processing.
+If no clear project exists, items go to both GTD personal-untracked/inbox.md and the Todoist `Inbox` project for processing.
 
 ## Fallback Behavior
-When in doubt, items go to inbox.md with timestamp and the Todoist `Inbox` project:
-- **GTD**: `- [ ] YYYY-MM-DD HH:MM - [item]` in inbox.md
+When in doubt, items go to personal-untracked/inbox.md with timestamp and the Todoist `Inbox` project:
+- **GTD**: `- [ ] YYYY-MM-DD HH:MM - [item]` in personal-untracked/inbox.md
 - **Todoist**: Created in the `Inbox` project with content `[item]`
 
 ## Implementation Notes

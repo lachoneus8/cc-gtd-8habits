@@ -57,8 +57,8 @@ curl -sS -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
 - Treat mentions, direct asks, and explicit owners as likely next actions.
 - Treat "I'll", "can you", "please", "by Friday", "waiting on", "blocked by", and "ship/review/approve/follow up" as high-signal phrases.
 - Capture unclear asks as clarifying follow-ups rather than inventing scope.
-- Put delegated work in `waiting-for.md` with owner, expected outcome, date, and source link.
-- Put time-specific items in `calendar.md` or the relevant daily note.
+- Put delegated work in `personal-untracked/waiting-for.md` with owner, expected outcome, date, and source link.
+- Put time-specific items in `personal-untracked/calendar.md` or the relevant daily note.
 - Put project-specific actions in `projects/active/<project>/tasks.md` under the closest context.
 - Preserve Slack permalinks when available; otherwise include channel, author, and timestamp.
 

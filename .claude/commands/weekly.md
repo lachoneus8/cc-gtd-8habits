@@ -18,7 +18,7 @@ Add a new log file for the week in `weekly/` folder with name like `2025-W28.md`
     - Add a section that goes over each active project's `info.md` (progress) and `tasks.md` (next actions) to ensure sync. Add `EDIT` blocks to get feedback from me.
     - Once you've the feedback then process those to update the project's `info.md` and `tasks.md` files.
     - Then plan the next week.
-- **Identity Calibration**: measure present self against `identity.md` (see below).
+- **Identity Calibration**: measure present self against `personal-untracked/identity.md` (see below).
 
 
 ## Review Checklist
@@ -31,9 +31,9 @@ Add a new log file for the week in `weekly/` folder with name like `2025-W28.md`
 - [ ] Run the Identity Calibration (below)
 
 ## Identity Calibration
-Measure present self against the durable identity in `identity.md`.
+Measure present self against the durable identity in `personal-untracked/identity.md`.
 
-1. Read `identity.md` and the week's `journal/` entries (especially any
+1. Read `personal-untracked/identity.md` and the week's `journal/` entries (especially any
    `### Brain Dump on Open Loops` from `/restart`).
 2. For each identity statement, assess present reality from journal evidence and the week's
    actual behavior. Quote my own words where possible — don't paraphrase me into something
@@ -47,7 +47,7 @@ Measure present self against the durable identity in `identity.md`.
 
 Write the calibration into this week's `weekly/` file (don't create a separate review
 file). Be honest, specific, direct — match my own vocabulary, not therapy-speak. If
-`identity.md` doesn't exist yet, say so and skip this section.
+`personal-untracked/identity.md` doesn't exist yet, say so and skip this section.
 
 ## This Week's Accomplishments
 <!-- Major completions and progress -->

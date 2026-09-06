@@ -1,11 +1,11 @@
 setup:
-    @mkdir -p daily/ journal/ projects/active projects/archived reviews/ weekly/
-    @[ -e inbox.md ] || cp templates/inbox.md inbox.md
-    @[ -e projects.md ] || cp templates/projects.md projects.md
-    @[ -e waiting-for.md ] || cp templates/waiting-for.md waiting-for.md
-    @[ -e someday-maybe.md ] || cp templates/someday-maybe.md someday-maybe.md
-    @[ -e calendar.md ] || cp templates/calendar.md calendar.md
-    @[ -e identity.md ] || cp templates/identity.md identity.md
+    @mkdir -p daily/ journal/ projects/active projects/archived reviews/ weekly/ personal-untracked/
+    @[ -e personal-untracked/inbox.md ] || cp templates/inbox.md personal-untracked/inbox.md
+    @[ -e personal-untracked/projects.md ] || cp templates/projects.md personal-untracked/projects.md
+    @[ -e personal-untracked/waiting-for.md ] || cp templates/waiting-for.md personal-untracked/waiting-for.md
+    @[ -e personal-untracked/someday-maybe.md ] || cp templates/someday-maybe.md personal-untracked/someday-maybe.md
+    @[ -e personal-untracked/calendar.md ] || cp templates/calendar.md personal-untracked/calendar.md
+    @[ -e personal-untracked/identity.md ] || cp templates/identity.md personal-untracked/identity.md
 
 add-project project:
     @mkdir -p projects/active/{{project}}

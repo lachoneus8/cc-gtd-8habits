@@ -5,23 +5,23 @@ Create and update today's daily plan with prioritized tasks and time blocks.
 Ensure context is synced with Todoist and Google Calendar.
 Invoke the `/todoist` and `/calendar` skills before proceeding with the daily plan.
 
-**Always start by copying the daily skeleton from `calendar.md`** into today's `### Time
+**Always start by copying the daily skeleton from `personal-untracked/calendar.md`** into today's `### Time
 Blocks` as the fixed scaffold. Then layer the day's prioritized tasks onto and between
 those blocks — don't replace the skeleton, build on it. If today is a weekend, treat the
 skeleton as optional and keep the day open for breadth.
 
-**Then create/refresh `todo.md`** (repo root) — the flat, live working list for today (see
+**Then create/refresh `personal-untracked/todo.md`** — the flat, live working list for today (see
 below). This is the file I keep updating through the day; `/shutdown` reconciles it in the
 evening.
 
-## `todo.md` — today's working list
+## `personal-untracked/todo.md` — today's working list
 
-Every `/daily` run (re)generates `todo.md` at the repo root: a single, dead-simple checklist
+Every `/daily` run (re)generates `personal-untracked/todo.md`: a single, dead-simple checklist
 of just *today's* actionable tasks, flattened from the Top 3 + time-block tasks. No prose,
 no projects, no time blocks — just checkboxes I can tick and add to all day.
 
-- Overwrite `todo.md` fresh each morning. First, carry over any unchecked items from
-  yesterday's `todo.md` (they didn't get done) before adding today's.
+- Overwrite `personal-untracked/todo.md` fresh each morning. First, carry over any unchecked items from
+  yesterday's `personal-untracked/todo.md` (they didn't get done) before adding today's.
 - Tag each line with its source project in parens so `/shutdown` can route completions back,
   e.g. `- [ ] Send renewal paperwork (Admin)`.
 - Keep a `## Captured` section at the bottom empty for me to jot new loops during the day.
