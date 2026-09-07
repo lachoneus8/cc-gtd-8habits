@@ -63,11 +63,14 @@ exists, rather than only the fully-built habits catching up later.
   its LLM-assisted path. On-demand deep-dive session on the user's current-focus habit, alongside
   the lighter touch `/onboard` gives on first exposure and the recurring check-in `/weekly` gives
   via Habit Calibration.
-- **A personal habit-progress file** (private, not yet created) — tracks which habit currently
-  has the user's focus. Per `A.1`, this field must stay freely changeable and non-terminal:
-  moving focus to a new habit is self-declared, with no minimum duration or algorithmic
-  threshold, and does not retire the habits already started — their calibration keeps running in
-  `/weekly` regardless of current focus. Exact file shape is still TBD (`A.2`).
+- **`personal-untracked/habits.md`** (private, template at `templates/habits.md`, decided in
+  `A.2`) — tracks Current Focus (which habit has the user's attention now; self-declared,
+  freely changeable, LLM writes it only on explicit instruction) and Started Habits (one section
+  per habit begun, each with its own dated Practice Log accumulated from `/habit` sessions). A
+  habit can only be added to Started Habits once its content exists under `templates/habits/`.
+  Calibration history is not duplicated here — it stays in `weekly/`, same as Identity
+  Calibration. Unlike `identity.md`, this file is system-managed state the LLM may write, not
+  user-authored content it must never invent.
 - **Microsoft To Do** (or whatever daily task tool a given user prefers) — stays the actual
   week-to-week execution surface for some users; this system's `personal-untracked/todo.md`/Todoist/Calendar
   integrations already cover that role for others. How a repo-external tool feeds back and

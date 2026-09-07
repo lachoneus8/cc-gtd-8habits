@@ -12,7 +12,8 @@ described below so the system feels consistent as you move from one habit to the
   alongside the existing Identity Calibration, checks in on every habit you've started, not just
   the one that currently has your focus.
 - **`/habit`** is there when you want a deliberate session: revisit a habit's core idea, work
-  through its reflection prompts, log practice.
+  through its reflection prompts, log practice. Practice notes land under that habit's own
+  section in your `personal-untracked/habits.md`, so its history stays together with the habit.
 - Individual habits also show up inside the everyday GTD commands where they naturally apply —
   for example, Habit 1 shapes how `/capture` talks about trusting the inbox, Habit 3 shapes
   time-blocking in `/daily`, and so on.

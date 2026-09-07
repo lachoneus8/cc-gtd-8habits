@@ -37,6 +37,7 @@ it for later refinement.
 First, check whether the private workspace files exist:
 
 - `personal-untracked/identity.md`
+- `personal-untracked/habits.md`
 - `personal-untracked/projects.md`
 - `personal-untracked/calendar.md`
 - `personal-untracked/inbox.md`

@@ -6,6 +6,7 @@ setup:
     @[ -e personal-untracked/someday-maybe.md ] || cp templates/someday-maybe.md personal-untracked/someday-maybe.md
     @[ -e personal-untracked/calendar.md ] || cp templates/calendar.md personal-untracked/calendar.md
     @[ -e personal-untracked/identity.md ] || cp templates/identity.md personal-untracked/identity.md
+    @[ -e personal-untracked/habits.md ] || cp templates/habits.md personal-untracked/habits.md
 
 add-project project:
     @mkdir -p projects/active/{{project}}
