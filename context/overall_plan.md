@@ -51,14 +51,23 @@ exists, rather than only the fully-built habits catching up later.
 - **`context/overall_plan.md`** (this file, tracked) — living statement of the overall
   objective, sequencing philosophy, and current phase. Stays high-level and generic enough to
   make sense to anyone forking the repo.
-- **`templates/habits/`** (tracked, not yet created) — planned home for the teaching content of
-  each habit: the principle, reflection prompts, and where it hooks into the existing GTD
-  mechanics (e.g. Habit 1 → trusting `/capture` and the inbox; Habit 3 → Top 3
-  Priorities/time-blocking in `/daily`; Habit 7 → the weekly review and energy management that
-  already exist). Built one habit at a time, not drafted in full up front.
-- **A personal habit-progress file** (private, not yet created) — tracks which habit is
-  current, since progress itself is personal state, not shareable content. Exact shape TBD when
-  we get to building the first habit's onboarding.
+- **`templates/habits/`** (tracked; `README.md` created in `A.1`, per-habit content files not yet
+  created) — home for the teaching content of each habit: the principle, reflection prompts,
+  practice, and calibration criteria, plus where it hooks into the existing GTD mechanics (e.g.
+  Habit 1 → trusting `/capture` and the inbox; Habit 3 → Top 3 Priorities/time-blocking in
+  `/daily`; Habit 7 → the weekly review and energy management that already exist).
+  `templates/habits/README.md` is the shared model every habit's file follows — written once in
+  `A.1`, not redecided per habit. Content itself is still built one habit at a time, not drafted
+  in full up front.
+- **`/habit`** (new command, not yet created) — introduced when the first habit phase implements
+  its LLM-assisted path. On-demand deep-dive session on the user's current-focus habit, alongside
+  the lighter touch `/onboard` gives on first exposure and the recurring check-in `/weekly` gives
+  via Habit Calibration.
+- **A personal habit-progress file** (private, not yet created) — tracks which habit currently
+  has the user's focus. Per `A.1`, this field must stay freely changeable and non-terminal:
+  moving focus to a new habit is self-declared, with no minimum duration or algorithmic
+  threshold, and does not retire the habits already started — their calibration keeps running in
+  `/weekly` regardless of current focus. Exact file shape is still TBD (`A.2`).
 - **Microsoft To Do** (or whatever daily task tool a given user prefers) — stays the actual
   week-to-week execution surface for some users; this system's `personal-untracked/todo.md`/Todoist/Calendar
   integrations already cover that role for others. How a repo-external tool feeds back and
@@ -66,9 +75,25 @@ exists, rather than only the fully-built habits catching up later.
 
 ## Cadence
 
-Weekly review (`/weekly`) stays the touchpoint, extended over time with a "Habit Calibration"
-section alongside the existing "Identity Calibration" once habit content exists to calibrate
-against.
+Weekly review (`/weekly`) stays the primary touchpoint, extended over time with a "Habit
+Calibration" section alongside the existing "Identity Calibration" once habit content exists to
+calibrate against. The on-demand `/habit` command supplements this for deliberate deep-dive
+sessions; `/onboard` only gives a light first exposure.
+
+## Build vs. Practice — Two Different "Done"s
+
+Decided in `A.1`, this distinction governs how the rest of the plan reads:
+
+- **System build.** Whether a habit's phase (design, GTD integration, LLM-assisted path,
+  calibration) is actually implemented is an engineering milestone, checked off via that habit's
+  `X.5` validation step in `[[task_list]]`. This governs when the *next* habit's phase begins
+  being built — build order stays serial, per the sequencing above.
+- **User mastery.** Per Covey's own upward-spiral model, a habit is never "complete" for the
+  user, so it is never gated. Once a habit's system support exists it stays live indefinitely.
+  See `templates/habits/README.md` for how this reads to the user.
+
+Do not conflate the two: a habit phase finishing `X.5` means the mechanism works, not that the
+user has "graduated" the habit.
 
 ## Current phase
 

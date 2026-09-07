@@ -4,7 +4,7 @@ Tracking checklist for [[overall_plan]]. **Rule: each entry is a checkbox and a 
 
 ## Phase A — Foundation
 
-- [ ] A.1 Define the shared 7 Habits learning and coaching model
+- [x] A.1 Define the shared 7 Habits learning and coaching model
 - [ ] A.2 Define the LLM-assisted habit workflow and user/state boundaries
 - [ ] A.3 Define the GTD integration map and weekly calibration contract
 - [ ] A.4 Build the foundation values/identity onboarding path
