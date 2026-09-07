@@ -78,6 +78,11 @@ Then explain the operating loop:
 /restart -> /capture -> /daily -> personal-untracked/todo.md during the day -> /shutdown -> /weekly
 ```
 
+Also name the layer underneath the loop: `personal-untracked/identity.md` is the values/identity
+anchor the rest of the system calibrates against each week. Habit-specific coaching is added on
+top of this foundation progressively, not all at once — today's onboarding only builds the
+foundation.
+
 ### 3. Draft Identity Anchors
 
 Open `personal-untracked/identity.md`. If it still looks like the template, ask the user for 5-8 identity
@@ -94,6 +99,10 @@ anchors. Keep prompts concrete:
 
 Write concise first-person statements. Do not make them grandiose. These are durable
 directional anchors, not goals.
+
+These anchors are also the seed of a personal mission statement — the file is refined into that
+more deliberately once the habits layer built on top of it exists. Do not build that structure
+now; today's pass is the starter version.
 
 If the user wants to skip this, keep the template and add a short TODO at the top:
 
@@ -261,6 +270,8 @@ Also remind them:
 - Personal files are intentionally ignored by git.
 - MCP integrations are optional; local markdown works first.
 - The system gets better after the first shutdown and first weekly review.
+- `personal-untracked/identity.md` is the values foundation the system is built on; habit-specific
+  coaching is layered in progressively over time, not all at once.
 
 ## Guardrails
 

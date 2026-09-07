@@ -39,6 +39,14 @@ This system implements David Allen's GTD methodology with modern AI enhancements
 - Daily planning assistance
 - External tool synchronization
 
+### Values & Habits Foundation (in progress)
+
+- `personal-untracked/identity.md` as the values/identity anchor the weekly review calibrates
+  against
+- The 7 Habits (and later the 8th Habit) layered on top of the GTD loop progressively, one habit
+  built and locked in at a time — see [context/overall_plan.md](context/overall_plan.md) and
+  [context/task_list.md](context/task_list.md) for current phase and sequencing
+
 ## File Structure
 
 ```

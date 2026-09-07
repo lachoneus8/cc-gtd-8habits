@@ -18,6 +18,15 @@ This exists for two reasons at once:
    have GTD's mechanics layered in at the point each habit naturally calls for them, and manage
    the whole thing through a weekly review cadence.
 
+The implementation is tracked in [[task_list]]. The task list stays intentionally concise. Each
+habit is built serially through the same five-step loop: gather evidence and best practices,
+design the teaching/reflection path, identify the appropriate GTD integration, implement the
+LLM-assisted path and private progress state, then validate the habit and its weekly calibration.
+The next habit does not begin until the current habit's loop is complete. The "implement" step
+for each habit includes updating the shared entry points — `/onboard`, `ONBOARDING.md`, and
+`README.md` — so a new user's first-run experience reflects whatever habit layer currently
+exists, rather than only the fully-built habits catching up later.
+
 ## Sequencing / Approach
 
 - Follow Covey's **inside-out** transformation, in sequence — Private Victory (Habits 1-3)
@@ -37,6 +46,8 @@ This exists for two reasons at once:
 
 - **`personal-untracked/identity.md`** (private, user-authored) — the values anchor. Doubles as the Habit 2
   mission/roles artifact.
+- **`personal-untracked/repo_context.md`** (private, user-authored) — personal operating context
+  and collaboration preferences that must not be copied into the reusable implementation plan.
 - **`context/overall_plan.md`** (this file, tracked) — living statement of the overall
   objective, sequencing philosophy, and current phase. Stays high-level and generic enough to
   make sense to anyone forking the repo.

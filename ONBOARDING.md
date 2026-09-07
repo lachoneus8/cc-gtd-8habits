@@ -27,6 +27,11 @@ This is not a normal todo list. It is a GTD operating loop:
 - `daily/` records plan, work log, and reflection.
 - `weekly/` keeps the system honest.
 
+Underneath this loop, `personal-untracked/identity.md` is the values/identity anchor the weekly
+review calibrates against. This fork layers Stephen Covey's 7 Habits (and later the 8th Habit) on
+top of that foundation progressively — one habit built and locked in at a time, not all at once.
+See [context/overall_plan.md](context/overall_plan.md) for the current phase.
+
 ## First-Run Short Version
 
 ```bash
