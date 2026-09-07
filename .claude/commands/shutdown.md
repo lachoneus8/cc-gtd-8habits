@@ -8,6 +8,7 @@ shape, then help me empty my head so I can stop thinking about work and go about
 reconciles it at night. Counterpart to `/daily`.
 
 ## Usage
+
 ```
 /shutdown
 ```
@@ -15,10 +16,12 @@ reconciles it at night. Counterpart to `/daily`.
 ## Behavior
 
 ### 1. Read today's state
+
 - Read `personal-untracked/todo.md` and today's `daily/YYYY-MM-DD.md`.
 - Invoke the `/todoist` skill first if Todoist may be out of sync.
 
 ### 2. Close the loops (what got done)
+
 - For each **checked** `[x]` item in `personal-untracked/todo.md`:
   - Mark it complete in the matching project `projects/active/<project>/tasks.md`
     (`- [ ]` → `- [x]`), using the `(Project)` tag on the line to route it.
@@ -30,12 +33,14 @@ reconciles it at night. Counterpart to `/daily`.
   vague to the inbox/journal. Don't lose anything.
 
 ### 3. Record the day onto the daily log
+
 - Fill today's `## 📝 Work Log` (what happened) and `## 🔄 Reflection` (wins, what slipped
   and why, adjustments). Be honest and specific — this is the same reflection `/weekly`
   reads later. Infer what got done from `personal-untracked/todo.md` + completions; if a Top-3 didn't land,
   say so and why.
 
 ### 4. Decide tomorrow
+
 - Carry every **unchecked** `personal-untracked/todo.md` item forward (leave it open in its project/Todoist so
   tomorrow's `/daily` repulls it). Reschedule due dates if needed via `reschedule-tasks`.
 - Glance at tomorrow's calendar (`/calendar`) for fixed commitments and deadline pressure.
@@ -43,12 +48,14 @@ reconciles it at night. Counterpart to `/daily`.
   matter most). Don't build tomorrow's full plan — that's tomorrow's `/daily`.
 
 ### 5. Empty my head (open loops)
+
 - Run a quick brain-sweep like a light `/restart`: ask what's still rattling around —
   work, personal, nagging unknowns. Capture verbatim into today's journal
   (`journal/YYYY-MM-DD.md`, under `## Notes`) or route clear actions as in step 2.
-- Keep asking *"what else is still in there?"* until I'm empty. The goal is nothing left in
+- Keep asking _"what else is still in there?"_ until I'm empty. The goal is nothing left in
   my head to think about tonight.
 
 ### 6. Confirm shutdown
+
 - Report: loops closed (n), carried to tomorrow (n), captured (n), tomorrow's focus.
 - Confirm `personal-untracked/todo.md` is reconciled and the day is logged. Then I'm done — go about the evening.

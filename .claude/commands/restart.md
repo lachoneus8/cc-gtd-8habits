@@ -6,6 +6,7 @@ fixing. Structure comes later (`/capture`, then the `/weekly` calibration). Righ
 just get it all out.
 
 ## Usage
+
 ```
 /restart
 ```
@@ -22,7 +23,6 @@ just get it all out.
    ## Notes
 
    ### Brain Dump on Open Loops
-
    ```
 
    If today's file already exists, append a new `### Brain Dump on Open Loops` section
@@ -45,8 +45,8 @@ just get it all out.
 
 6. **Stay out of the way while I write.** Capture what I say into the journal section
    verbatim — preserve my words, my phrasing, my mess. Do **not** rewrite, summarize,
-   prioritize, or turn loops into tasks during the dump. If I trail off, ask only: *"What
-   else is still in there?"* and keep going until I say I'm empty.
+   prioritize, or turn loops into tasks during the dump. If I trail off, ask only: _"What
+   else is still in there?"_ and keep going until I say I'm empty.
 
 7. When I signal I'm done, confirm the dump is saved and report the journal path. Then
    offer — but do not auto-run — the next steps:

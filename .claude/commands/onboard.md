@@ -7,6 +7,7 @@ root. Do not assume Todoist, Google Calendar, or Slack are connected; integratio
 optional and should not block the first local workflow.
 
 ## Usage
+
 ```
 /onboard
 ```
@@ -196,25 +197,31 @@ Daily log structure:
 # Daily Log - YYYY-MM-DD
 
 ## Daily Plan
+
 **Last Updated:** HH:MM
 
 ### Top 3 Priorities
+
 1. [ ] ...
 2. [ ] ...
 3. [ ] ...
 
 ### Time Blocks
+
 - ...
 
 ### Energy Mapping
+
 - High:
 - Medium:
 - Low:
 
 ## Work Log
+
 <!-- Fill in at /shutdown -->
 
 ## Reflection
+
 <!-- Fill in at /shutdown -->
 ```
 
@@ -224,12 +231,15 @@ Daily log structure:
 # Todo - YYYY-MM-DD
 
 ## Top 3
+
 - [ ] ... (Project)
 
 ## Today
+
 - [ ] ... (Project)
 
 ## Captured
+
 <!-- jot new tasks/loops here during the day; /shutdown processes them -->
 ```
 

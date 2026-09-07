@@ -8,7 +8,7 @@ Prior art and related projects worth knowing about while building this out.
   forks. GTD engine, Claude Code commands, MCP integrations, private/shareable file split all
   originate there.
 - **[pitimon/8-habit-ai-dev](https://github.com/pitimon/8-habit-ai-dev)** — a Claude Code plugin
-  applying Covey's *8th Habit* ("Find Your Voice and Inspire Others to Find Theirs") and a
+  applying Covey's _8th Habit_ ("Find Your Voice and Inspire Others to Find Theirs") and a
   Body/Mind/Heart/Spirit whole-person assessment to AI-assisted **software development
   workflow** discipline, not personal life/GTD. Not directly reusable here, but relevant once
   this project reaches Habit 7/8: Habit 8's framing (using competence to help others find their
