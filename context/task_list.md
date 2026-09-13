@@ -6,10 +6,11 @@ Tracking checklist for [[overall_plan]]. **Rule: each entry is a checkbox and a 
 
 - [x] A.1 Define the shared 7 Habits learning and coaching model
 - [x] A.2 Define the LLM-assisted habit workflow and user/state boundaries
-- [ ] A.3 Define the GTD integration map and weekly calibration contract
-- [ ] A.4 Build the foundation values/identity onboarding path
-- [ ] A.5 Draft the personal mission statement as the Habit 2 anchor artifact
-- [ ] A.6 Validate the foundation path end to end
+- [ ] A.3 Define the staged onboarding and session-scheduling model
+- [ ] A.4 Define the GTD integration map and weekly calibration contract
+- [ ] A.5 Build the foundation values/identity onboarding path
+- [ ] A.6 Draft the personal mission statement as the Habit 2 anchor artifact
+- [ ] A.7 Validate the foundation path end to end
 
 ## Phase B — Habit 1: Be Proactive
 

@@ -16,6 +16,23 @@ structured belongs in this tracked `CLAUDE.md` or in another tracked documentati
 `.gitignore` protects `personal-untracked/` as a directory; preserve that boundary when adding
 new private files.
 
+Every file under `personal-untracked/` must open with a standard privacy note, placed as a
+blockquote directly beneath the file's own top-level heading:
+
+```markdown
+# <File Title>
+
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
+...
+```
+
+This applies whether the file is seeded from a template in `templates/` or created fresh by a
+command or skill. `templates/` files that produce `personal-untracked/` output carry the note
+already, so it survives being copied; a command or skill that writes a new `personal-untracked/`
+file directly (not from a template — e.g. `personal-untracked/todo.md`) must include it too.
+
 ## Development Guidance
 
 - Keep the system useful to someone who forks the repository; avoid assumptions about one

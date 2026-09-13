@@ -1,5 +1,8 @@
 # Calendar
 
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
 Time-specific commitments and the recurring daily time-block skeleton.
 
 Source of truth for live scheduling is your calendar. This file is the GTD-side mirror.

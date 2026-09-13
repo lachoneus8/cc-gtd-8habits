@@ -1,5 +1,8 @@
 # Habits
 
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
 Private tracking for progress through the 7 Habits (and later the 8th Habit). Not shareable —
 see `.gitignore`. `/weekly` and `/habit` read and update this file.
 

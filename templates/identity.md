@@ -1,5 +1,8 @@
 # Identity
 
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
 The person you are building toward. Keep this short and durable. Weekly review measures present reality against this file.
 
 ## Mornings

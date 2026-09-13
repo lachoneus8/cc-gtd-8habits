@@ -41,6 +41,19 @@ exists, rather than only the fully-built habits catching up later.
   functions as a Habit 2 (mission/roles) artifact, and the weekly review's existing "Identity
   Calibration" already measures present reality against it. That scaffolding is reused as-is
   rather than duplicated with a separate "personal constitution" file.
+- **Onboarding is staged, not one-shot.** Both source authors say the same thing in their own
+  domain: Covey expects one read-through of the whole book for structure, then real work
+  happens one habit at a time; Allen expects a dedicated, sized-for-real-life session to do the
+  initial full capture rather than assuming it happens inline. A single `/onboard` run should
+  not try to force either of those into one sitting. Onboarding builds the light scaffolding and
+  a first trustworthy loop only; the heavier passes (GTD's initial full capture sweep, deep
+  per-habit practice work) get deferred to a session the user schedules for when they actually
+  have the time, sized to what they have rather than assuming everyone can do it the same way.
+- **Assumed prior reading.** The system assumes the user has read *The 7 Habits of Highly
+  Effective People* (30th Anniversary Edition, which briefly covers the 8th Habit) and David
+  Allen's *Getting Things Done* (2015 edition). Content and
+  coaching should teach application against this system, not re-explain either methodology's
+  fundamentals from scratch.
 
 ## Roles of the pieces in play
 
@@ -51,26 +64,33 @@ exists, rather than only the fully-built habits catching up later.
 - **`context/overall_plan.md`** (this file, tracked) — living statement of the overall
   objective, sequencing philosophy, and current phase. Stays high-level and generic enough to
   make sense to anyone forking the repo.
-- **`templates/habits/`** (tracked; `README.md` created in `A.1`, per-habit content files not yet
+- **`templates/habits/`** (tracked; `README.md` created, per-habit content files not yet
   created) — home for the teaching content of each habit: the principle, reflection prompts,
   practice, and calibration criteria, plus where it hooks into the existing GTD mechanics (e.g.
   Habit 1 → trusting `/capture` and the inbox; Habit 3 → Top 3 Priorities/time-blocking in
   `/daily`; Habit 7 → the weekly review and energy management that already exist).
-  `templates/habits/README.md` is the shared model every habit's file follows — written once in
-  `A.1`, not redecided per habit. Content itself is still built one habit at a time, not drafted
-  in full up front.
+  `templates/habits/README.md` is the shared model every habit's file follows — written once,
+  not redecided per habit. Content itself is still built one habit at a time, not drafted in
+  full up front.
 - **`/habit`** (new command, not yet created) — introduced when the first habit phase implements
   its LLM-assisted path. On-demand deep-dive session on the user's current-focus habit, alongside
   the lighter touch `/onboard` gives on first exposure and the recurring check-in `/weekly` gives
   via Habit Calibration.
-- **`personal-untracked/habits.md`** (private, template at `templates/habits.md`, decided in
-  `A.2`) — tracks Current Focus (which habit has the user's attention now; self-declared,
+- **`personal-untracked/habits.md`** (private, template at `templates/habits.md`) — tracks
+  Current Focus (which habit has the user's attention now; self-declared,
   freely changeable, LLM writes it only on explicit instruction) and Started Habits (one section
   per habit begun, each with its own dated Practice Log accumulated from `/habit` sessions). A
   habit can only be added to Started Habits once its content exists under `templates/habits/`.
   Calibration history is not duplicated here — it stays in `weekly/`, same as Identity
   Calibration. Unlike `identity.md`, this file is system-managed state the LLM may write, not
   user-authored content it must never invent.
+- **Scheduled sessions** (mechanism not yet decided) — the deferred-work counterpart to the
+  staged-onboarding principle above. Big-effort items that don't fit inside `/onboard` or a
+  single `/habit` run (GTD's initial full capture sweep, a deeper per-habit practice pass) need
+  somewhere to live as a concrete, sized commitment the user schedules rather than an open-ended
+  intention that quietly never happens. Where this gets tracked (e.g. `calendar.md`, a dedicated
+  list, or something else) and how `/onboard`/`/weekly`/`/habit` offer and follow up on it is
+  still open.
 - **Microsoft To Do** (or whatever daily task tool a given user prefers) — stays the actual
   week-to-week execution surface for some users; this system's `personal-untracked/todo.md`/Todoist/Calendar
   integrations already cover that role for others. How a repo-external tool feeds back and
@@ -85,18 +105,17 @@ sessions; `/onboard` only gives a light first exposure.
 
 ## Build vs. Practice — Two Different "Done"s
 
-Decided in `A.1`, this distinction governs how the rest of the plan reads:
+This distinction governs how the rest of the plan reads:
 
 - **System build.** Whether a habit's phase (design, GTD integration, LLM-assisted path,
-  calibration) is actually implemented is an engineering milestone, checked off via that habit's
-  `X.5` validation step in `[[task_list]]`. This governs when the *next* habit's phase begins
-  being built — build order stays serial, per the sequencing above.
+  calibration) is actually implemented is an engineering milestone. This governs when the
+  *next* habit's phase begins being built — build order stays serial, per the sequencing above.
 - **User mastery.** Per Covey's own upward-spiral model, a habit is never "complete" for the
   user, so it is never gated. Once a habit's system support exists it stays live indefinitely.
   See `templates/habits/README.md` for how this reads to the user.
 
-Do not conflate the two: a habit phase finishing `X.5` means the mechanism works, not that the
-user has "graduated" the habit.
+Do not conflate the two: a habit phase finishing its build means the mechanism works, not that
+the user has "graduated" the habit.
 
 ## Current phase
 

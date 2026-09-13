@@ -1,5 +1,8 @@
 # Projects Dashboard
 
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
 Read-only overview of active projects and the GTD sync map.
 
 ## Active Projects
