@@ -59,7 +59,7 @@ curl -sS -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
 - Capture unclear asks as clarifying follow-ups rather than inventing scope.
 - Put delegated work in `personal-untracked/waiting-for.md` with owner, expected outcome, date, and source link.
 - Put time-specific items in `personal-untracked/calendar.md` or the relevant daily note.
-- Put project-specific actions in `projects/active/<project>/tasks.md` under the closest context.
+- Put project-specific actions in `personal-untracked/projects/active/<project>/tasks.md` under the closest context.
 - Preserve Slack permalinks when available; otherwise include channel, author, and timestamp.
 
 ## Search Query Patterns

@@ -1,5 +1,8 @@
 # Projects Dashboard
 
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
 Read-only overview of active projects and the GTD sync map.
 
 ## Active Projects
@@ -15,7 +18,7 @@ Read-only overview of active projects and the GTD sync map.
 
 Last synced: never
 
-| GTD folder (`projects/active/...`) | tasks.md heading | Todoist project | Todoist section | Todoist ID |
+| GTD folder (`personal-untracked/projects/active/...`) | tasks.md heading | Todoist project | Todoist section | Todoist ID |
 |---|---|---|---|---|
 | `work/` | @work-code / @work-computer | Work | — | |
 | `health-and-foundation/` | @home-computer / @home-calls / @errands | Health & Foundation | — | |

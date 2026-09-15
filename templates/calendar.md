@@ -1,5 +1,8 @@
 # Calendar
 
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
 Time-specific commitments and the recurring daily time-block skeleton.
 
 Source of truth for live scheduling is your calendar. This file is the GTD-side mirror.
@@ -20,4 +23,9 @@ Last synced: never
 
 ## Time-Specific Items
 
-<!-- Appointments and hard deadlines with a fixed date/time. -->
+<!-- Appointments and hard deadlines with a fixed date/time. Format:
+- [ ] YYYY-MM-DD [HH:MM] — Description
+Tag a deferred big-effort commitment (the GTD full capture sweep, a scheduled habit deep-dive)
+with "(Session)" so /weekly knows to follow up on it specifically, e.g.:
+- [ ] YYYY-MM-DD — GTD full capture sweep (Session)
+Check it off once done; /weekly asks about any (Session) line that's overdue and still open. -->

@@ -15,6 +15,7 @@ plan, and next habits. [ONBOARDING.md](ONBOARDING.md) is the written reference.
 ## Overview
 
 This system implements David Allen's GTD methodology with modern AI enhancements for:
+
 - Smart task capture and processing
 - Automated project organization
 - Daily planning and work logging
@@ -23,6 +24,7 @@ This system implements David Allen's GTD methodology with modern AI enhancements
 ## Features
 
 ### Core GTD Implementation
+
 - **Inbox** for quick capture with timestamps
 - **Projects** with dedicated tracking and task management
 - **Contexts** for organizing next actions by location/tool
@@ -31,29 +33,47 @@ This system implements David Allen's GTD methodology with modern AI enhancements
 - **Reference** materials organization
 
 ### AI Enhancements
+
 - Smart capture that auto-processes obvious actions
 - Intelligent processing that skips unnecessary GTD steps
 - Daily planning assistance
 - External tool synchronization
 
+### Values & Habits Foundation (in progress)
+
+- `personal-untracked/identity.md` as the values/identity anchor the weekly review calibrates
+  against
+- The 7 Habits (and later the 8th Habit) layered on top of the GTD loop progressively, one habit
+  built and locked in at a time — see [context/overall_plan.md](context/overall_plan.md) and
+  [context/task_list.md](context/task_list.md) for current phase and sequencing
+- `/habit` for an on-demand deep-dive session on a habit, and `/weekly`'s Habit Calibration for
+  the recurring check-in — both read from `habits/` (Habit 1: Be Proactive is built so far)
+
 ## File Structure
 
 ```
 gtd/
-├── personal-untracked/         # User-specific files, ignored as one folder
-│   ├── inbox.md                # Raw capture with timestamps
-│   ├── projects.md             # Project dashboard (read-only overview)
+├── personal-untracked/          # Everything user-specific, ignored as one folder
+│   ├── inbox.md                 # Raw capture with timestamps
+│   ├── projects.md              # Project dashboard (read-only overview)
 │   ├── waiting-for.md           # Delegated/expected items
 │   ├── someday-maybe.md         # Future possibilities
-│   └── calendar.md              # Time-specific items
-├── projects/active/            # Active projects
-│   └── [project-name]/
-│       ├── info.md             # Project goals, outcomes, progress
-│       └── tasks.md            # Context-organized next actions
-├── projects/archived/          # Completed projects
-├── reviews/weekly-review.md    # Review templates
-├── daily/YYYY-MM-DD.md         # Daily planning and work logs
-└── reference/                  # Non-actionable materials
+│   ├── calendar.md              # Time-specific items
+│   ├── identity.md              # Values/identity anchor
+│   ├── habits.md                # Current Focus + Started Habits practice log
+│   ├── todo.md                  # Today's flat working list
+│   ├── journal/YYYY-MM-DD.md    # Raw thinking, brain dumps
+│   ├── daily/YYYY-MM-DD.md      # Daily planning and work logs
+│   ├── weekly/YYYY-Www.md       # Weekly review + calibration
+│   └── projects/
+│       ├── active/[project-name]/
+│       │   ├── info.md          # Project goals, outcomes, progress
+│       │   └── tasks.md         # Context-organized next actions
+│       └── archived/            # Completed projects
+├── habits/                      # Shared habit content (research + teaching), tracked
+├── context/                     # Overall plan, task list, reference notes, tracked
+├── templates/                   # Seeds for personal-untracked/ files, tracked
+└── reference/                   # Non-actionable materials
 ```
 
 ## Commands
@@ -66,11 +86,13 @@ gtd/
 - `/onboard` - Guided first-run setup and GTD onboarding
 - `/restart` - Restart the day from current context
 - `/shutdown` - End-of-day reconciliation
+- `/habit` - On-demand deep-dive session on a started habit
 - `/journal` - Capture a journal entry
 
 ## Context System
 
 Organize tasks by context for efficient execution:
+
 - `@work-code` - Coding tasks (work)
 - `@work-errand` - Work-related errands
 - `@home-computer` - Personal computer tasks
@@ -84,6 +106,7 @@ Organize tasks by context for efficient execution:
 ## Project Management
 
 Each active project contains:
+
 - **info.md**: Goals, desired outcomes, progress tracking, history
 - **tasks.md**: Next actions organized by context
 
@@ -91,7 +114,8 @@ Projects move to `archived/` upon completion with proper status documentation.
 
 ## Daily Planning
 
-Daily files (`daily/YYYY-MM-DD.md`) include:
+Daily files (`personal-untracked/daily/YYYY-MM-DD.md`) include:
+
 - **Daily Plan**: Priorities, time blocks, energy mapping
 - **Work Log**: Timestamped activities with durations
 - **Reflection**: What worked, improvements, next day focus
@@ -110,17 +134,20 @@ Daily files (`daily/YYYY-MM-DD.md`) include:
 ### Installation Steps
 
 1. Clone this repository:
+
    ```bash
    git clone <repository-url>
    cd gtd
    ```
 
 2. Run the setup command:
+
    ```bash
    just setup
    ```
 
 3. In Claude Code, run:
+
    ```text
    /onboard
    ```
@@ -134,6 +161,7 @@ Daily files (`daily/YYYY-MM-DD.md`) include:
 ### Additional Commands
 
 The `justfile` includes helpful commands:
+
 - `just setup` - Creates private local files from templates without overwriting existing data
 - `just onboard` - Prints the first-run command sequence
 - `just add-project project-name` - Creates a new project with info.md and tasks.md
@@ -147,10 +175,12 @@ folders, and local MCP config.
 ## Smart Processing Logic
 
 The AI assistant intelligently processes captures:
+
 - **Auto-processes**: Clear, single actions with obvious context
 - **Sends to inbox**: Vague items, multi-step projects, unclear scope
 
 During processing, it skips obvious steps:
+
 - Already defined items skip "What is it?"
 - Action verbs skip "Is it actionable?"
 - Specific actions skip "Next action?"
@@ -167,6 +197,7 @@ During processing, it skips obvious steps:
 ## Energy Management
 
 The system supports energy-based planning:
+
 - Track energy levels in daily planning
 - Map tasks to appropriate energy states
 - Review energy patterns in weekly reviews
@@ -174,6 +205,7 @@ The system supports energy-based planning:
 ## Integration
 
 Designed to work with:
+
 - Todoist MCP for task sync and mobile capture
 - Google Calendar MCP for schedule context and time blocking
 - AI assistants for processing automation
@@ -187,7 +219,7 @@ This GTD system structure is open source and available for anyone to use and ada
 - **GTD system design & implementation:** [adagradschool/cc-gtd](https://github.com/adagradschool/cc-gtd)
   on GitHub — this fork's inbox/projects/contexts/reviews/daily-planning engine, commands, and
   private/shareable file split are theirs. All credit for that work belongs to them.
-- **GTD methodology:** David Allen's *Getting Things Done*.
-- **Habits layer:** Stephen Covey's *The 7 Habits of Highly Effective People* (30th Anniversary
-  Edition) and *The 8th Habit*, adapted here as the identity/mission foundation underneath the
+- **GTD methodology:** David Allen's _Getting Things Done_.
+- **Habits layer:** Stephen Covey's _The 7 Habits of Highly Effective People_ (30th Anniversary
+  Edition) and _The 8th Habit_, adapted here as the identity/mission foundation underneath the
   GTD loop above.

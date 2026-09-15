@@ -7,6 +7,7 @@ root. Do not assume Todoist, Google Calendar, or Slack are connected; integratio
 optional and should not block the first local workflow.
 
 ## Usage
+
 ```
 /onboard
 ```
@@ -36,17 +37,18 @@ it for later refinement.
 First, check whether the private workspace files exist:
 
 - `personal-untracked/identity.md`
+- `personal-untracked/habits.md`
 - `personal-untracked/projects.md`
 - `personal-untracked/calendar.md`
 - `personal-untracked/inbox.md`
 - `personal-untracked/waiting-for.md`
 - `personal-untracked/someday-maybe.md`
-- `daily/`
-- `journal/`
-- `projects/active/`
-- `projects/archived/`
-- `reviews/`
-- `weekly/`
+- `personal-untracked/daily/`
+- `personal-untracked/journal/`
+- `personal-untracked/projects/active/`
+- `personal-untracked/projects/archived/`
+- `personal-untracked/reviews/`
+- `personal-untracked/weekly/`
 
 If any are missing, run `just setup` if available. If `just` is unavailable, create the
 same files/directories from `templates/` manually.
@@ -62,14 +64,14 @@ Then verify privacy:
 
 Give the user the mental model:
 
-- `journal/` is raw thinking.
+- `personal-untracked/journal/` is raw thinking.
 - `personal-untracked/inbox.md` is unprocessed capture.
-- `projects/active/*/info.md` holds outcomes and status.
-- `projects/active/*/tasks.md` holds next actions by context.
+- `personal-untracked/projects/active/*/info.md` holds outcomes and status.
+- `personal-untracked/projects/active/*/tasks.md` holds next actions by context.
 - `personal-untracked/calendar.md` mirrors fixed commitments and recurring blocks.
 - `personal-untracked/todo.md` is only today's working list.
-- `daily/` records the plan, work log, and reflection.
-- `weekly/` keeps the system honest.
+- `personal-untracked/daily/` records the plan, work log, and reflection.
+- `personal-untracked/weekly/` keeps the system honest.
 
 Then explain the operating loop:
 
@@ -77,22 +79,42 @@ Then explain the operating loop:
 /restart -> /capture -> /daily -> personal-untracked/todo.md during the day -> /shutdown -> /weekly
 ```
 
+Also name the layer underneath the loop: `personal-untracked/identity.md` is the values/identity
+anchor the rest of the system calibrates against each week. Habit-specific coaching is added on
+top of this foundation progressively, not all at once — today's onboarding only builds the
+foundation.
+
 ### 3. Draft Identity Anchors
 
 Open `personal-untracked/identity.md`. If it still looks like the template, ask the user for 5-8 identity
-anchors. Keep prompts concrete:
+anchors — total, not one per category below. These are prompts to pick from, not a checklist to
+fill completely:
 
 - Mornings / energy
 - Body and space
 - Work
 - Creative or personal projects
 - Relationships
-- Mind / learning
-- Attention / inputs
+- Mind / learning / attention
 - Life rhythm
 
-Write concise first-person statements. Do not make them grandiose. These are durable
-directional anchors, not goals.
+Write concise first-person statements, a sentence or two each. Do not make them grandiose.
+These are durable directional anchors, not goals. Keep this pass quick — the goal is something
+true and usable today, not something thorough.
+
+After the anchors, seed (don't build) the `## Roles` and `## Mission` sections at the top of the
+file:
+
+- Roles: ask for a short list of the hats they wear (e.g. Parent, Engineer, Friend) — a list,
+  not reflection on each one.
+- Mission: ask for one rough sentence on who they're becoming and who it's for. Explicitly frame
+  it as a rough first draft, not the real thing — it's fine if it's imperfect or generic.
+
+This gives them something to open Habit 2 with instead of a blank section, but stays a seed, not
+a deliverable: the deliberate mission/roles pass — the version Habit 2 (Begin With the End in
+Mind) actually anchors on — happens once the user is working Habit 2, not during onboarding or
+anywhere else in the Foundation phase. If Roles or Mission don't come easily, leave them as the
+template's placeholder rather than pushing for an answer.
 
 If the user wants to skip this, keep the template and add a short TODO at the top:
 
@@ -150,7 +172,7 @@ events. Do not require it.
 
 ### 6. Capture the First Brain Dump
 
-Create or open today's `journal/YYYY-MM-DD.md`. Add:
+Create or open today's `personal-untracked/journal/YYYY-MM-DD.md`. Add:
 
 ```markdown
 ### Onboarding Brain Dump
@@ -173,7 +195,7 @@ Capture the user's words verbatim. Do not organize while dumping.
 
 After the dump, process only clear items:
 
-- clear next actions -> relevant `projects/active/<project>/tasks.md`
+- clear next actions -> relevant `personal-untracked/projects/active/<project>/tasks.md`
 - delegated items -> `personal-untracked/waiting-for.md`
 - hard dates -> `personal-untracked/calendar.md`
 - future/maybe ideas -> `personal-untracked/someday-maybe.md`
@@ -188,33 +210,42 @@ leave them local.
 
 ### 8. Make the First Daily Plan
 
-Create today's `daily/YYYY-MM-DD.md` and `personal-untracked/todo.md`.
+Create today's `personal-untracked/daily/YYYY-MM-DD.md` and `personal-untracked/todo.md`.
 
 Daily log structure:
 
 ```markdown
 # Daily Log - YYYY-MM-DD
 
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
 ## Daily Plan
+
 **Last Updated:** HH:MM
 
 ### Top 3 Priorities
+
 1. [ ] ...
 2. [ ] ...
 3. [ ] ...
 
 ### Time Blocks
+
 - ...
 
 ### Energy Mapping
+
 - High:
 - Medium:
 - Low:
 
 ## Work Log
+
 <!-- Fill in at /shutdown -->
 
 ## Reflection
+
 <!-- Fill in at /shutdown -->
 ```
 
@@ -223,19 +254,39 @@ Daily log structure:
 ```markdown
 # Todo - YYYY-MM-DD
 
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
 ## Top 3
+
 - [ ] ... (Project)
 
 ## Today
+
 - [ ] ... (Project)
 
 ## Captured
+
 <!-- jot new tasks/loops here during the day; /shutdown processes them -->
 ```
 
 Pick a realistic Top 3. If the user has too many tasks, explicitly defer most of them.
 
-### 9. Finish With the Operating Instructions
+### 9. Offer to Schedule the Full Capture Sweep
+
+Today's brain dump and processing (steps 6-7) was the light pass, not GTD's full initial
+capture — Allen expects a dedicated, sized-for-real-life session across every area of life, not
+something squeezed into onboarding. Name that gap explicitly and offer to schedule it:
+
+- Ask if the user wants to pick a date/time for it now. This is optional — skip cleanly if they'd
+  rather decide later.
+- If they give one, add a line to `personal-untracked/calendar.md`'s `## Time-Specific Items`:
+  `- [ ] YYYY-MM-DD [HH:MM] — GTD full capture sweep (Session)`. The `(Session)` tag is what lets
+  `/weekly` follow up on it later — see that command's Scheduled Sessions check.
+- If Google Calendar is connected, offer to also create a real event via `/calendar` for the same
+  slot. Not required.
+
+### 10. Finish With the Operating Instructions
 
 End by showing the user exactly what to do next:
 
@@ -245,12 +296,17 @@ End by showing the user exactly what to do next:
 - End of week: run `/weekly`.
 - Anytime overwhelmed: run `/restart`.
 - Anytime a message/thread needs action triage: run `/slack`.
+- Anytime for a deliberate session on a habit: run `/habit` (Habit 1: Be Proactive is the first
+  one with content — see `habits/habit1.md`).
 
 Also remind them:
 
 - Personal files are intentionally ignored by git.
 - MCP integrations are optional; local markdown works first.
 - The system gets better after the first shutdown and first weekly review.
+- `personal-untracked/identity.md` is the values foundation the system is built on; habit-specific
+  coaching is layered in progressively over time, not all at once. `/habit` is there whenever
+  they want to go deeper on one; nothing about it is required on day one.
 
 ## Guardrails
 
