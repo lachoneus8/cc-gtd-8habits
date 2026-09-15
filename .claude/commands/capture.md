@@ -97,9 +97,7 @@ When auto-processing tasks, the system:
 If no clear project exists, items go to both GTD personal-untracked/inbox.md and the Todoist `Inbox` project for processing.
 
 ## Fallback Behavior
-
 When in doubt, items go to personal-untracked/inbox.md with timestamp and the Todoist `Inbox` project:
-
 - **GTD**: `- [ ] YYYY-MM-DD HH:MM - [item]` in personal-untracked/inbox.md
 - **Todoist**: Created in the `Inbox` project with content `[item]`
 

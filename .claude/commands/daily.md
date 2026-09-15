@@ -17,7 +17,7 @@ evening.
 ## `personal-untracked/todo.md` — today's working list
 
 Every `/daily` run (re)generates `personal-untracked/todo.md`: a single, dead-simple checklist
-of just _today's_ actionable tasks, flattened from the Top 3 + time-block tasks. No prose,
+of just *today's* actionable tasks, flattened from the Top 3 + time-block tasks. No prose,
 no projects, no time blocks — just checkboxes I can tick and add to all day.
 
 - Overwrite `personal-untracked/todo.md` fresh each morning. First, carry over any unchecked items from

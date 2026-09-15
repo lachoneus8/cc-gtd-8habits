@@ -24,8 +24,7 @@ Get the user to a trustworthy first daily loop:
 6. A raw brain dump is captured.
 7. Obvious actions are processed.
 8. Today's `personal-untracked/todo.md` is created.
-9. The GTD full capture sweep is offered as a scheduled session (optional).
-10. User knows the evening and weekly follow-up commands.
+9. User knows the evening and weekly follow-up commands.
 
 ## Behavior
 
