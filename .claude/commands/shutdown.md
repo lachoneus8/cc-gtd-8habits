@@ -17,13 +17,13 @@ reconciles it at night. Counterpart to `/daily`.
 
 ### 1. Read today's state
 
-- Read `personal-untracked/todo.md` and today's `daily/YYYY-MM-DD.md`.
+- Read `personal-untracked/todo.md` and today's `personal-untracked/daily/YYYY-MM-DD.md`.
 - Invoke the `/todoist` skill first if Todoist may be out of sync.
 
 ### 2. Close the loops (what got done)
 
 - For each **checked** `[x]` item in `personal-untracked/todo.md`:
-  - Mark it complete in the matching project `projects/active/<project>/tasks.md`
+  - Mark it complete in the matching project `personal-untracked/projects/active/<project>/tasks.md`
     (`- [ ]` → `- [x]`), using the `(Project)` tag on the line to route it.
   - Complete the corresponding **Todoist** task (find by content in that project; use
     `complete-tasks`). Never auto-complete anything that isn't checked in `personal-untracked/todo.md`.
@@ -51,7 +51,8 @@ reconciles it at night. Counterpart to `/daily`.
 
 - Run a quick brain-sweep like a light `/restart`: ask what's still rattling around —
   work, personal, nagging unknowns. Capture verbatim into today's journal
-  (`journal/YYYY-MM-DD.md`, under `## Notes`) or route clear actions as in step 2.
+  (`personal-untracked/journal/YYYY-MM-DD.md`, under `## Notes`) or route clear actions as in
+  step 2.
 - Keep asking _"what else is still in there?"_ until I'm empty. The goal is nothing left in
   my head to think about tonight.
 

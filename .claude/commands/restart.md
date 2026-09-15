@@ -14,11 +14,14 @@ just get it all out.
 ## Behavior
 
 1. Determine today's date (format `YYYY-MM-DD`).
-2. Ensure the `journal/` folder exists; create it if it does not.
-3. Open `journal/YYYY-MM-DD.md`. If it doesn't exist, create it seeded with:
+2. Ensure the `personal-untracked/journal/` folder exists; create it if it does not.
+3. Open `personal-untracked/journal/YYYY-MM-DD.md`. If it doesn't exist, create it seeded with:
 
    ```markdown
    # Journal - YYYY-MM-DD
+
+   > Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+   > do not move its contents into tracked repository guidance.
 
    ## Notes
 

@@ -61,6 +61,30 @@ For each captured item, analyzes:
 
 Tasks are added to the appropriate project's `tasks.md` file under the correct context section and simultaneously created in the corresponding Todoist project (via the Todoist MCP server) with the proper `@context` label.
 
+## Habit 1 Integration (Be Proactive)
+
+Check `personal-untracked/habits.md`'s Started Habits first. If Habit 1 isn't there, skip this
+section entirely — capture behaves exactly as documented above, unmodified. GTD works standalone
+regardless of habit progress.
+
+If Habit 1 is started:
+
+- **Actionability *is* the Circle of Influence question.** GTD's own "is this actionable?" test
+  and Habit 1's Circle of Influence/Concern sort are the same question asked two ways. When
+  something can't get a concrete next action because it's genuinely not this person's to act on
+  right now, say so plainly instead of quietly parking it — e.g. "this isn't something you can
+  act on right now, not that it's unimportant" rather than a bare inbox entry with no comment.
+  Still park it exactly where it would otherwise go (inbox, someday-maybe, waiting-for); this is
+  about naming *why*, not changing the routing.
+- **Write next actions in proactive language on purpose, not by accident.** GTD's verb-first
+  convention already trends this way — with Habit 1 active, be deliberate about it: prefer
+  ownership phrasing ("Decide whether to...", "Reply to X about Y") over vague reactive framing
+  ("Deal with X", "Handle the Y situation").
+- **Notice a pattern, don't just process the instance.** If the same unresolved item keeps
+  resurfacing across captures without ever getting a real next action, that's worth naming as a
+  possible Circle-of-Concern item the next time it comes up, rather than reprocessing it the same
+  way indefinitely.
+
 ## Todoist Integration
 
 When auto-processing tasks, the system:

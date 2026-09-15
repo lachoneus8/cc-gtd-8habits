@@ -18,7 +18,7 @@ Read-only overview of active projects and the GTD sync map.
 
 Last synced: never
 
-| GTD folder (`projects/active/...`) | tasks.md heading | Todoist project | Todoist section | Todoist ID |
+| GTD folder (`personal-untracked/projects/active/...`) | tasks.md heading | Todoist project | Todoist section | Todoist ID |
 |---|---|---|---|---|
 | `work/` | @work-code / @work-computer | Work | — | |
 | `health-and-foundation/` | @home-computer / @home-calls / @errands | Health & Foundation | — | |

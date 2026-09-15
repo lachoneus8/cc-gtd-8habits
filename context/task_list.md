@@ -6,19 +6,19 @@ Tracking checklist for [[overall_plan]]. **Rule: each entry is a checkbox and a 
 
 - [x] A.1 Define the shared 7 Habits learning and coaching model
 - [x] A.2 Define the LLM-assisted habit workflow and user/state boundaries
-- [ ] A.3 Define the staged onboarding and session-scheduling model
-- [ ] A.4 Define the GTD integration map and weekly calibration contract
-- [ ] A.5 Build the foundation values/identity onboarding path
-- [ ] A.6 Draft the personal mission statement as the Habit 2 anchor artifact
-- [ ] A.7 Validate the foundation path end to end
+- [x] A.3 Define the staged onboarding and session-scheduling model
+- [x] A.4 Define the GTD integration map and weekly calibration contract
+- [x] A.5 Build the foundation values/identity onboarding path
+- [x] A.6 Draft the personal mission statement as the Habit 2 anchor artifact
 
 ## Phase B — Habit 1: Be Proactive
 
-- [ ] B.1 Gather best practices for agency, responsibility, and Circle of Influence
-- [ ] B.2 Design the Habit 1 teaching, reflection, and practice path
-- [ ] B.3 Layer Habit 1 into GTD capture, clarify, and next-action workflows
-- [ ] B.4 Implement the Habit 1 LLM-assisted path and progress state
-- [ ] B.5 Validate the Habit 1 path and weekly calibration
+- [x] B.1 Gather best practices for agency, responsibility, and Circle of Influence
+- [x] B.2 Design the Habit 1 teaching, reflection, and practice path
+- [x] B.3 Layer Habit 1 into GTD capture, clarify, and next-action workflows
+- [x] B.4 Implement the Habit 1 LLM-assisted path and progress state
+- [x] B.5 Validate the foundation path end to end
+- [x] B.6 Validate the Habit 1 path and weekly calibration
 
 ## Phase C — Habit 2: Begin With the End in Mind
 

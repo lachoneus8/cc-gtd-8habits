@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/source/CTE/InteractiveCurriculum/context/**)",
+      "Bash(perl -pi -e 's/\\\\r\\\\n/\\\\n/g' \"personal-untracked/journal/2026-09-14.md\")"
+    ]
+  }
+}

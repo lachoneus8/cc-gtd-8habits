@@ -65,6 +65,9 @@ Template:
 ```markdown
 # Daily Log - 2025-06-26
 
+> Private: this file is private user context for Claude Code. Keep it in `personal-untracked/`;
+> do not move its contents into tracked repository guidance.
+
 ## 📋 Daily Plan
 
 **Last Updated:** 09:15

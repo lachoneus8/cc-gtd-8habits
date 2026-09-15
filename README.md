@@ -46,25 +46,34 @@ This system implements David Allen's GTD methodology with modern AI enhancements
 - The 7 Habits (and later the 8th Habit) layered on top of the GTD loop progressively, one habit
   built and locked in at a time — see [context/overall_plan.md](context/overall_plan.md) and
   [context/task_list.md](context/task_list.md) for current phase and sequencing
+- `/habit` for an on-demand deep-dive session on a habit, and `/weekly`'s Habit Calibration for
+  the recurring check-in — both read from `habits/` (Habit 1: Be Proactive is built so far)
 
 ## File Structure
 
 ```
 gtd/
-├── personal-untracked/         # User-specific files, ignored as one folder
-│   ├── inbox.md                # Raw capture with timestamps
-│   ├── projects.md             # Project dashboard (read-only overview)
+├── personal-untracked/          # Everything user-specific, ignored as one folder
+│   ├── inbox.md                 # Raw capture with timestamps
+│   ├── projects.md              # Project dashboard (read-only overview)
 │   ├── waiting-for.md           # Delegated/expected items
 │   ├── someday-maybe.md         # Future possibilities
-│   └── calendar.md              # Time-specific items
-├── projects/active/            # Active projects
-│   └── [project-name]/
-│       ├── info.md             # Project goals, outcomes, progress
-│       └── tasks.md            # Context-organized next actions
-├── projects/archived/          # Completed projects
-├── reviews/weekly-review.md    # Review templates
-├── daily/YYYY-MM-DD.md         # Daily planning and work logs
-└── reference/                  # Non-actionable materials
+│   ├── calendar.md              # Time-specific items
+│   ├── identity.md              # Values/identity anchor
+│   ├── habits.md                # Current Focus + Started Habits practice log
+│   ├── todo.md                  # Today's flat working list
+│   ├── journal/YYYY-MM-DD.md    # Raw thinking, brain dumps
+│   ├── daily/YYYY-MM-DD.md      # Daily planning and work logs
+│   ├── weekly/YYYY-Www.md       # Weekly review + calibration
+│   └── projects/
+│       ├── active/[project-name]/
+│       │   ├── info.md          # Project goals, outcomes, progress
+│       │   └── tasks.md         # Context-organized next actions
+│       └── archived/            # Completed projects
+├── habits/                      # Shared habit content (research + teaching), tracked
+├── context/                     # Overall plan, task list, reference notes, tracked
+├── templates/                   # Seeds for personal-untracked/ files, tracked
+└── reference/                   # Non-actionable materials
 ```
 
 ## Commands
@@ -77,6 +86,7 @@ gtd/
 - `/onboard` - Guided first-run setup and GTD onboarding
 - `/restart` - Restart the day from current context
 - `/shutdown` - End-of-day reconciliation
+- `/habit` - On-demand deep-dive session on a started habit
 - `/journal` - Capture a journal entry
 
 ## Context System
@@ -104,7 +114,7 @@ Projects move to `archived/` upon completion with proper status documentation.
 
 ## Daily Planning
 
-Daily files (`daily/YYYY-MM-DD.md`) include:
+Daily files (`personal-untracked/daily/YYYY-MM-DD.md`) include:
 
 - **Daily Plan**: Priorities, time blocks, energy mapping
 - **Work Log**: Timestamped activities with durations

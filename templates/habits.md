@@ -16,7 +16,7 @@ assistant to, whenever you're ready to move on -- there's no automatic gate. -->
 ## Started Habits
 
 <!-- One section per habit you've begun. A habit can only be added here once its content exists
-under templates/habits/. Format:
+under habits/. Format:
 
 ### Habit N — <Name>
 

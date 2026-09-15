@@ -18,19 +18,24 @@ This is not a normal todo list. It is a GTD operating loop:
 /restart -> /capture -> /daily -> personal-untracked/todo.md -> /shutdown -> /weekly
 ```
 
-- `journal/` is raw thinking.
+- `personal-untracked/journal/` is raw thinking.
 - `personal-untracked/inbox.md` is unprocessed capture.
-- `projects/active/*/info.md` holds outcomes and status.
-- `projects/active/*/tasks.md` holds next actions by context.
+- `personal-untracked/projects/active/*/info.md` holds outcomes and status.
+- `personal-untracked/projects/active/*/tasks.md` holds next actions by context.
 - `personal-untracked/calendar.md` mirrors fixed commitments and recurring blocks.
 - `personal-untracked/todo.md` is only today's working list.
-- `daily/` records plan, work log, and reflection.
-- `weekly/` keeps the system honest.
+- `personal-untracked/daily/` records plan, work log, and reflection.
+- `personal-untracked/weekly/` keeps the system honest.
 
 Underneath this loop, `personal-untracked/identity.md` is the values/identity anchor the weekly
 review calibrates against. This fork layers Stephen Covey's 7 Habits (and later the 8th Habit) on
 top of that foundation progressively — one habit built and locked in at a time, not all at once.
 See [context/overall_plan.md](context/overall_plan.md) for the current phase.
+
+Once a habit has content built (Habit 1: Be Proactive is first), run `/habit` any time for a
+deliberate session on it — its own core idea, reflection prompts, and practice, logged to
+`personal-untracked/habits.md`. `/weekly` also picks up a Habit Calibration section once that
+habit's practice log has something to calibrate against.
 
 ## First-Run Short Version
 

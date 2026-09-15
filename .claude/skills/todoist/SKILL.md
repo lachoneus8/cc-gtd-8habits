@@ -33,7 +33,7 @@ When this skill is run, perform the following bidirectional sync between Todoist
 
 ### 1. Get Active GTD Projects
 
-- Read all active GTD projects from `projects/active/*/info.md` files
+- Read all active GTD projects from `personal-untracked/projects/active/*/info.md` files
 - For each project directory, extract the project name from the directory name or info.md
 
 ### 2. Bidirectional Project Sync
@@ -42,8 +42,8 @@ For each active GTD project:
 
 **Step A: Read Local Context**
 
-- Read `projects/active/[project]/info.md` to understand project goals and context
-- Read `projects/active/[project]/tasks.md` to get current GTD tasks organized by context
+- Read `personal-untracked/projects/active/[project]/info.md` to understand project goals and context
+- Read `personal-untracked/projects/active/[project]/tasks.md` to get current GTD tasks organized by context
 - Parse tasks into list format: `[task content, context, completed_status]`
 
 **Step B: Read Todoist Context**
