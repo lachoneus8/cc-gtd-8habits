@@ -33,7 +33,7 @@ next to the evidence that led to them instead of split across files.
   through its reflection prompts, log practice. Practice notes land under that habit's own
   section in your `personal-untracked/habits.md`, so its history stays together with the habit.
 - Individual habits also show up inside the everyday GTD commands where they naturally apply —
-  for example, Habit 1 shapes how `/capture` talks about trusting the inbox, Habit 3 shapes
+  for example, Habit 1 shapes how `/capture` talks about trusting the inbox, Habit 2 shapes how new projects get a Desired Outcome and how `/weekly` reads your Roles and Mission, Habit 3 shapes
   time-blocking in `/daily`, and so on.
 
 ## Weekly Calibration Contract

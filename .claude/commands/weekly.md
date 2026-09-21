@@ -40,6 +40,7 @@ Add a new log file for the week in `personal-untracked/weekly/` folder with name
 - [ ] Update calendar for upcoming week
 - [ ] Clean up completed items
 - [ ] Check Scheduled Sessions (below)
+- [ ] Read the Roles and Mission (Habit 2 only, below)
 - [ ] Run the Identity Calibration (below)
 - [ ] Run the Habit Calibration (below)
 
@@ -54,6 +55,28 @@ big-effort commitments deferred from `/onboard` or elsewhere (e.g. the GTD full 
 2. For any `(Session)` line with a future date, no action needed — just note it exists if it's
    coming up this week.
 3. If `personal-untracked/calendar.md` doesn't exist yet, say so and skip this section.
+
+## Habit 2 Layer (Begin With the End in Mind)
+
+Only if Habit 2 is in `personal-untracked/habits.md`'s Started Habits; otherwise skip this whole
+section and review as documented elsewhere in this file.
+
+1. **Read the Roles and Mission first.** Before the project review, show the user their `## Roles`
+   and `## Mission` from `personal-untracked/identity.md` verbatim, read-only, and ask one
+   question: does anything here ring false or feel changed this week? If yes, note it in the
+   weekly file; edit `identity.md` only on their explicit instruction, in their words. If the
+   Mission is still the placeholder, say so once, gently, and offer a `/habit` session — don't
+   nag. "Once" means once per review: say it in the conversation only, and don't repeat it in the
+   weekly file, in a closing summary, or in a sign-off (the calibration row can still note the Mission's status).
+2. **Outcome check during project review.** For each active project, look at its `info.md`
+   Desired Outcome. If it's empty or is just a task list, raise it as an `EDIT` block. If it
+   doesn't obviously connect to a Role or value, raise that as a neutral question in the same
+   `EDIT` block (keep, reshape, or drop — their call). Don't rewrite outcomes for them.
+3. **Keep the two calibrations distinct.** Identity Calibration below asks whether the week's
+   behavior matched the identity anchors; the Habit Calibration's Habit 2 criteria ask whether
+   the direction is being *used* (decisions, outcomes, revisiting). Don't restate the same
+   finding in both — when both draw on the same journal evidence, quote it in one section and
+   cross-reference it ("see Identity Calibration above") in the other.
 
 ## Identity Calibration
 

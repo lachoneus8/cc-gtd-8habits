@@ -1,0 +1,15 @@
+{
+  "description": "User explicitly asks for the funeral visualization, gives a platitude first, hits an emotional moment, then authors and consents to a Mission write.",
+  "fixture_from": "habit2-session",
+  "today": "2026-09-20",
+  "opening_prompt": "/habit 2",
+  "max_turns": 18,
+  "checks": [
+    {"id": "habit2-started", "type": "file_contains", "path": "personal-untracked/habits.md", "pattern": "### Habit 2 — Begin With the End in Mind", "description": "Habit 2 added to Started Habits"},
+    {"id": "practice-log-entry", "type": "file_contains", "path": "personal-untracked/habits.md", "pattern": "(?s)### Habit 2.*2026-09-20:", "description": "Dated practice log line for today"},
+    {"id": "identity-updated", "type": "file_changed", "path": "personal-untracked/identity.md", "description": "User consented, so the Mission should have been written"},
+    {"id": "roles-preserved", "type": "file_contains", "path": "personal-untracked/identity.md", "pattern": "Trail-crew volunteer", "description": "Existing Roles not destroyed"},
+    {"id": "only-expected-files", "type": "only_changed", "allowed": ["personal-untracked/habits.md", "personal-untracked/identity.md", "personal-untracked/journal/*"], "description": "No stray file changes"},
+    {"id": "privacy-headers", "type": "privacy_header_on_new"}
+  ]
+}
