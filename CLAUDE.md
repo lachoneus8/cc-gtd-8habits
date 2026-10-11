@@ -41,6 +41,28 @@ command or skill. `templates/` files that produce `personal-untracked/` output c
 already, so it survives being copied; a command or skill that writes a new `personal-untracked/`
 file directly (not from a template — e.g. `personal-untracked/todo.md`) must include it too.
 
+## Habit Discussions
+
+Whenever a conversation turns to the 7 Habits (or the 8th), whether inside `/daily`, `/weekly`,
+`/habit`, or a freeform chat, ground it in this repo's own material before answering from general
+knowledge:
+
+- Read `personal-untracked/habits.md` first: Current Focus, Started Habits, each habit's Practice
+  Log, and the Daily Prompt state.
+- Read the matching `habits/habit<N>.md`. Use its **Habit Content** (Principle, Reflection
+  Prompts, Practice, Calibration Criteria) as what you say and measure against. Its **Research**
+  section is background for design and for answering "what are the best practices"; don't recite it
+  at the user in coaching.
+- Take evidence from the user's own words in `personal-untracked/journal/`, `daily/`, and
+  `weekly/`, and quote them. Follow the Voice section in `habits/README.md`.
+- Never invent, embellish, or backdate Practice Log entries, and write Current Focus only on an
+  explicit yes (see `.claude/commands/habit.md`).
+
+Habit coaching reaches the user through `/daily` (an occasional check-in), `/weekly` (Habit
+Calibration), and the optional `/habit` deep-dive. Not every user wants a separate habit command;
+`/daily` and `/weekly` are meant to carry the habits on their own, so don't push `/habit` on someone
+who prefers not to use it.
+
 ## Development Guidance
 
 - Keep the system useful to someone who forks the repository; avoid assumptions about one

@@ -112,7 +112,7 @@ file:
 
 This gives them something to open Habit 2 with instead of a blank section, but stays a seed, not
 a deliverable: the deliberate mission/roles pass — the version Habit 2 (Begin With the End in
-Mind) actually anchors on — happens once the user is working Habit 2, not during onboarding or
+Mind) actually anchors on — happens once the user is working Habit 2 (via `/habit 2`), not during onboarding or
 anywhere else in the Foundation phase. If Roles or Mission don't come easily, leave them as the
 template's placeholder rather than pushing for an answer.
 
@@ -297,7 +297,8 @@ End by showing the user exactly what to do next:
 - Anytime overwhelmed: run `/restart`.
 - Anytime a message/thread needs action triage: run `/slack`.
 - Anytime for a deliberate session on a habit: run `/habit` (Habit 1: Be Proactive is the first
-  one with content — see `habits/habit1.md`).
+  one with content — see `habits/habit1.md`; Habit 2: Begin With the End in Mind is next, and
+  is where the Roles/Mission seeded above get their deliberate pass — see `habits/habit2.md`).
 
 Also remind them:
 

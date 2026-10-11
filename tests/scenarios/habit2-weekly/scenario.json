@@ -1,0 +1,16 @@
+{
+  "description": "Weekly review with Habit 2 as Current Focus: Habit 2 layer, outcome check, Habit Calibration with diff, placeholder Mission handled gently.",
+  "today": "2026-09-20",
+  "opening_prompt": "/weekly",
+  "max_turns": 14,
+  "checks": [
+    {"id": "weekly-file-created", "type": "file_changed", "path": "personal-untracked/weekly/2026-W38.md", "description": "This week's review file written"},
+    {"id": "identity-calibration-section", "type": "file_contains", "path": "personal-untracked/weekly/2026-W38.md", "pattern": "## Identity Calibration"},
+    {"id": "habit-calibration-section", "type": "file_contains", "path": "personal-untracked/weekly/2026-W38.md", "pattern": "## Habit Calibration"},
+    {"id": "habit2-not-red", "type": "file_not_contains", "path": "personal-untracked/weekly/2026-W38.md", "pattern": "(?s)Begin With the End in Mind[^\\n]*🔴", "description": "Placeholder Mission is a gentle yellow, not red, on the Habit 2 heading line"},
+    {"id": "weekly-privacy-header", "type": "file_contains", "path": "personal-untracked/weekly/2026-W38.md", "pattern": "> Private: this file is private user context"},
+    {"id": "identity-untouched", "type": "file_unchanged", "path": "personal-untracked/identity.md", "description": "Weekly review never edits Roles/Mission without instruction"},
+    {"id": "current-focus-untouched", "type": "file_contains", "path": "personal-untracked/habits.md", "pattern": "## Current Focus\\s+Habit 2", "description": "Current Focus not changed by /weekly"},
+    {"id": "privacy-headers", "type": "privacy_header_on_new"}
+  ]
+}

@@ -85,6 +85,23 @@ If Habit 1 is started:
   possible Circle-of-Concern item the next time it comes up, rather than reprocessing it the same
   way indefinitely.
 
+## Habit 2 Integration (Begin With the End in Mind)
+
+Check `personal-untracked/habits.md`'s Started Habits first. If Habit 2 isn't there, skip this
+section entirely — capture behaves exactly as documented above, unmodified.
+
+If Habit 2 is started, this applies only when a captured item turns out to be a **new project**
+(a multi-step outcome, or something the user asks to open a project for), not to ordinary
+single-step actions:
+
+- **Ask for the outcome before the tasks.** Ask "what does done look like, and what's it for?"
+  and write the answer, in the user's words, as the project's `info.md` Desired Outcome. If they
+  don't know yet, park the item in the inbox as usual — don't invent an outcome.
+- **Offer the role/value link, don't require it.** Ask once whether it serves one of the Roles
+  or values in `personal-untracked/identity.md`. If they name one, mention it in the Desired
+  Outcome text. If it serves none, say so neutrally and let them choose to keep it, shrink it, or
+  drop it. Never guess the link on their behalf, and never edit `identity.md` from here.
+
 ## Todoist Integration
 
 When auto-processing tasks, the system:

@@ -29,11 +29,13 @@ next to the evidence that led to them instead of split across files.
 - **`/weekly`** is where habit coaching mainly lives day to day: a "Habit Calibration" section,
   alongside the existing Identity Calibration, checks in on every habit you've started, not just
   the one that currently has your focus.
+- **`/daily`** adds one short habit question every few days (not every day), so the habit
+  stays in view between weekly reviews. See "Daily Habit Prompt Contract" below.
 - **`/habit`** is there when you want a deliberate session: revisit a habit's core idea, work
   through its reflection prompts, log practice. Practice notes land under that habit's own
   section in your `personal-untracked/habits.md`, so its history stays together with the habit.
 - Individual habits also show up inside the everyday GTD commands where they naturally apply —
-  for example, Habit 1 shapes how `/capture` talks about trusting the inbox, Habit 3 shapes
+  for example, Habit 1 shapes how `/capture` talks about trusting the inbox, Habit 2 shapes how new projects get a Desired Outcome and how `/weekly` reads your Roles and Mission, Habit 3 shapes
   time-blocking in `/daily`, and so on.
 
 ## Weekly Calibration Contract
@@ -63,6 +65,32 @@ reuses it rather than each one reinventing its own review logic.
   in `habits.md`.
 - **Guard.** If Started Habits is empty, say so and skip the section, same as Identity
   Calibration does when `identity.md` doesn't exist yet.
+
+## Daily Habit Prompt Contract
+
+`/weekly` is the main touchpoint, but a week is a long gap for a habit meant to shape daily
+choices. `/daily` adds one short, occasional question so the habit stays in view between reviews.
+It is deliberately not every day.
+
+- **Scope.** The Current Focus habit only, and only when `personal-untracked/habits.md` has at
+  least one Started Habit. Otherwise `/daily` says nothing about it.
+- **Cadence.** Kept in the user's `personal-untracked/habits.md` under `## Daily Prompt`:
+  `Cadence` (the minimum days between prompts, default 3), `Last prompted` (a date), and
+  `Last prompt` (the question text). `/daily` prompts only once the cadence has elapsed and stays
+  silent on the days in between. The user changes the cadence by editing the file or telling the
+  assistant.
+- **The question.** Exactly one, in plain language, drawn from the habit's Reflection Prompts or
+  Calibration Criteria in `habits/habit<N>.md`. Tie it to something real in the day's plan or
+  yesterday's log when possible (a stalled loop, a waiting thread) so it doesn't read as generic.
+  Never repeat the last prompt. It's a question to sit with, not a form to fill out.
+- **Where it lands.** A `### Habit Check-in` section in the daily log. The user can answer in the
+  log's `## Reflection` or in chat. Skipping it is fine: no nagging, no carry-over.
+- **What happens to answers.** The next `/daily` notes an answer found in a recent Reflection and
+  offers (never silently writes) to add it to the habit's Practice Log. `/weekly`'s Habit
+  Calibration quotes these answers as evidence.
+- **Independent of `/shutdown`.** The check-in works with only `/daily` and `/weekly`, since not
+  everyone ends their day with a shutdown ritual.
+- **Voice.** Same as the calibration: direct, specific, no therapy-speak.
 
 ## Moving Between Habits
 

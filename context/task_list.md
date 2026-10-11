@@ -22,11 +22,12 @@ Tracking checklist for [[overall_plan]]. **Rule: each entry is a checkbox and a 
 
 ## Phase C — Habit 2: Begin With the End in Mind
 
-- [ ] C.1 Gather best practices for values, mission, roles, and outcomes
-- [ ] C.2 Design the Habit 2 teaching, reflection, and practice path
-- [ ] C.3 Layer Habit 2 into identity, project outcomes, and review workflows
-- [ ] C.4 Implement the Habit 2 LLM-assisted path and progress state
-- [ ] C.5 Validate the Habit 2 path and weekly calibration
+- [x] C.1 Gather best practices for values, mission, roles, and outcomes
+- [x] C.2 Design the Habit 2 teaching, reflection, and practice path
+- [x] C.3 Layer Habit 2 into identity, project outcomes, and review workflows
+- [x] C.4 Implement the Habit 2 LLM-assisted path and progress state
+- [x] C.4b Build the automated validation harness (simulated user + evaluator)
+- [x] C.5 Validate the Habit 2 path and weekly calibration
 
 ## Phase D — Habit 3: Put First Things First
 

@@ -32,7 +32,7 @@ review calibrates against. This fork layers Stephen Covey's 7 Habits (and later 
 top of that foundation progressively — one habit built and locked in at a time, not all at once.
 See [context/overall_plan.md](context/overall_plan.md) for the current phase.
 
-Once a habit has content built (Habit 1: Be Proactive is first), run `/habit` any time for a
+Once a habit has content built (Habit 1: Be Proactive is first; Habit 2: Begin With the End in Mind is next), run `/habit` any time for a
 deliberate session on it — its own core idea, reflection prompts, and practice, logged to
 `personal-untracked/habits.md`. `/weekly` also picks up a Habit Calibration section once that
 habit's practice log has something to calibrate against.

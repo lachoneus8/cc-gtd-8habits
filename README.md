@@ -47,7 +47,7 @@ This system implements David Allen's GTD methodology with modern AI enhancements
   built and locked in at a time — see [context/overall_plan.md](context/overall_plan.md) and
   [context/task_list.md](context/task_list.md) for current phase and sequencing
 - `/habit` for an on-demand deep-dive session on a habit, and `/weekly`'s Habit Calibration for
-  the recurring check-in — both read from `habits/` (Habit 1: Be Proactive is built so far)
+  the recurring check-in — both read from `habits/` (Habit 1: Be Proactive and Habit 2: Begin With the End in Mind are built so far)
 
 ## File Structure
 

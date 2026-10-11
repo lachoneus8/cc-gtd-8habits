@@ -17,3 +17,7 @@ onboard:
     @echo "1. Run: just setup"
     @echo "2. In Claude Code, run: /onboard"
     @echo "3. Use ONBOARDING.md as the written reference"
+
+# Run an automated validation scenario (simulated user + evaluator) in a throwaway sandbox.
+test-scenario name:
+    python tests/harness/run_scenario.py {{name}}

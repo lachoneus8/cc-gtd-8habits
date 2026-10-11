@@ -44,6 +44,13 @@ later habits — `/onboard` is meant to launch a new user straight into Habit 1,
 only makes sense to validate end-to-end once Habit 1 actually exists to onboard into. Habits 2
 onward go back to the plain five-step loop.
 
+Each habit's validation step (`.5`) is run with the automated harness in `tests/` (see
+`tests/README.md`): an agent under test follows the real command files in a throwaway sandbox
+seeded with a fictional persona, a simulated user plays that persona, and an evaluator scores the
+result against a rubric drawn from the habit's Calibration Criteria and Guardrails. This keeps
+validation independent of anyone's real `personal-untracked/` content. A habit's `.5` step adds
+scenarios; the harness itself is built once (Phase C, C.4b).
+
 ## Sequencing / Approach
 
 - Follow Covey's **inside-out** transformation, in sequence — Private Victory (Habits 1-3)
@@ -83,7 +90,7 @@ onward go back to the plain five-step loop.
 - **`context/overall_plan.md`** (this file, tracked) — living statement of the overall
   objective, sequencing philosophy, and current phase. Stays high-level and generic enough to
   make sense to anyone forking the repo.
-- **`habits/`** (tracked; `README.md` and `habit1.md` created, `habit2.md` onward not yet) — one
+- **`habits/`** (tracked; `README.md` and `habit1.md` created, `habit2.md` research, content, and GTD hooks, wired into `/habit`, `/onboard`, and the entry-point docs, `habit3.md` onward not yet) — one
   file per habit (`habitN.md`) holding both the best-practices research behind it and the
   teaching content built from that research: the principle, reflection prompts, practice, and
   calibration criteria, plus where it hooks into the existing GTD mechanics (see the GTD
@@ -149,7 +156,9 @@ Weekly review (`/weekly`) stays the primary touchpoint, extended over time with 
 Calibration" section alongside the existing "Identity Calibration" once habit content exists to
 calibrate against — see the Weekly Calibration Contract in `habits/README.md` for the
 exact process that section will follow. The on-demand `/habit` command supplements this for
-deliberate deep-dive sessions; `/onboard` only gives a light first exposure.
+deliberate deep-dive sessions; `/onboard` only gives a light first exposure. Between weekly
+reviews, `/daily` adds one occasional habit question (not every day) per the Daily Habit Prompt
+Contract in `habits/README.md`, so the practice stays in view without depending on `/shutdown`.
 
 ## Build vs. Practice — Two Different "Done"s
 
