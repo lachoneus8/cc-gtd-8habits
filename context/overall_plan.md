@@ -156,7 +156,9 @@ Weekly review (`/weekly`) stays the primary touchpoint, extended over time with 
 Calibration" section alongside the existing "Identity Calibration" once habit content exists to
 calibrate against — see the Weekly Calibration Contract in `habits/README.md` for the
 exact process that section will follow. The on-demand `/habit` command supplements this for
-deliberate deep-dive sessions; `/onboard` only gives a light first exposure.
+deliberate deep-dive sessions; `/onboard` only gives a light first exposure. Between weekly
+reviews, `/daily` adds one occasional habit question (not every day) per the Daily Habit Prompt
+Contract in `habits/README.md`, so the practice stays in view without depending on `/shutdown`.
 
 ## Build vs. Practice — Two Different "Done"s
 

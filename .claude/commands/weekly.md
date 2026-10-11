@@ -72,7 +72,15 @@ section and review as documented elsewhere in this file.
    Desired Outcome. If it's empty or is just a task list, raise it as an `EDIT` block. If it
    doesn't obviously connect to a Role or value, raise that as a neutral question in the same
    `EDIT` block (keep, reshape, or drop — their call). Don't rewrite outcomes for them.
-3. **Keep the two calibrations distinct.** Identity Calibration below asks whether the week's
+3. **Self-reported roles.** Some roles are lived mostly outside this system (for example, faith or
+   family roles). If `personal-untracked/habits.md`'s Habit 2 section names roles to check by
+   self-report, don't look for evidence of them in the record and don't read its absence as
+   neglect. Instead, once per review, after showing Roles and Mission, ask one short, optional
+   question per named role, in the user's priority order: how did the week go for this role, and
+   is there one small thing to do differently next week? Record their answer in the weekly file
+   under "Role Check-in (self-reported)", in their words. Never score it, never ask for proof, never
+   push if they skip it, and keep it brief and respectful.
+4. **Keep the two calibrations distinct.** Identity Calibration below asks whether the week's
    behavior matched the identity anchors; the Habit Calibration's Habit 2 criteria ask whether
    the direction is being *used* (decisions, outcomes, revisiting). Don't restate the same
    finding in both — when both draw on the same journal evidence, quote it in one section and

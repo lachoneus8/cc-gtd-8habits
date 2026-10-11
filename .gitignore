@@ -1,3 +1,4 @@
 /personal-untracked/
 /.mcp.json
 /tests/runs/
+.claude/settings.json

@@ -13,6 +13,15 @@ None yet.
 <!-- The habit with your primary attention right now. Change this yourself, or tell the
 assistant to, whenever you're ready to move on -- there's no automatic gate. -->
 
+## Daily Prompt
+
+State for `/daily`'s occasional habit check-in (see `habits/README.md`, Daily Habit Prompt
+Contract). `/daily` updates the last two lines; change the cadence whenever you like.
+
+- Cadence (minimum days between prompts): 3
+- Last prompted: none yet
+- Last prompt: none yet
+
 ## Started Habits
 
 <!-- One section per habit you've begun. A habit can only be added here once its content exists

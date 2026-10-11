@@ -261,7 +261,9 @@ direction — deciding by it, revisiting it, and starting from outcomes.
 - **Mission in use.** Evidence the Roles/Mission were re-read, questioned, or revised this
   week (including deliberately leaving them unchanged), vs. untouched and unreferenced.
 - **Role attention.** Whether time and energy reached the roles they say matter, and whether a
-  neglected role was noticed and named rather than drifted past.
+  neglected role was noticed and named rather than drifted past. Roles the user lives mostly
+  outside this system (they say so in `personal-untracked/habits.md`) are checked by their own
+  weekly self-report instead, never scored, and missing evidence for them isn't read as neglect.
 - **Honesty about the gap.** Willingness to write down where the week didn't match what they
   say they want, vs. only recording what looks aligned.
 
